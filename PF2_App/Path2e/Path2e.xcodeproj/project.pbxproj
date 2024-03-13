@@ -1,0 +1,1969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BA0B54DC7F2B9B87ADAA018 /* Pods_Path2e.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FA6974C22FB7EF2B0C918F /* Pods_Path2e.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		941548772B0962AA00D54729 /* SpellListButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548762B0962AA00D54729 /* SpellListButtonDisplay.swift */; };
+		941548792B0972C700D54729 /* ChooseSpellFromListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548782B0972C600D54729 /* ChooseSpellFromListView.swift */; };
+		9415487C2B099C0100D54729 /* ChosenFormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415487B2B099C0100D54729 /* ChosenFormulaModel.swift */; };
+		9415487F2B0A983A00D54729 /* AbilityBoostSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415487E2B0A983A00D54729 /* AbilityBoostSelectionView.swift */; };
+		941548812B0A989B00D54729 /* AbilityScoreClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548802B0A989B00D54729 /* AbilityScoreClasses.swift */; };
+		941548832B0AB0F000D54729 /* ChosenAbilityBoostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548822B0AB0F000D54729 /* ChosenAbilityBoostModel.swift */; };
+		941548852B0AB20800D54729 /* SingleAbilityDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548842B0AB20800D54729 /* SingleAbilityDisplay.swift */; };
+		941548882B0C6DC600D54729 /* CharacterSheetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941548872B0C6DC600D54729 /* CharacterSheetTabView.swift */; };
+		9415488B2B0D354400D54729 /* StatTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415488A2B0D354400D54729 /* StatTabView.swift */; };
+		94162FDE2ADF8557006141B6 /* ConditionalFeatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FDD2ADF8557006141B6 /* ConditionalFeatureDisplay.swift */; };
+		94162FE02AE056C2006141B6 /* ConditionalOtherDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FDF2AE056C2006141B6 /* ConditionalOtherDisplay.swift */; };
+		94162FE32AE19D07006141B6 /* LevelUpConditionalChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FE22AE19D07006141B6 /* LevelUpConditionalChangeView.swift */; };
+		94162FE52AE1C5B3006141B6 /* CharacterConditionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FE42AE1C5B3006141B6 /* CharacterConditionalExtension.swift */; };
+		94162FE82AE2169A006141B6 /* returnCharacterObjectFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FE72AE2169A006141B6 /* returnCharacterObjectFunctions.swift */; };
+		94162FEA2AE216B4006141B6 /* returnConditionalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FE92AE216B4006141B6 /* returnConditionalFunctions.swift */; };
+		94162FEE2AE9CAB4006141B6 /* returnAttackFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FED2AE9CAB4006141B6 /* returnAttackFunctions.swift */; };
+		94162FF02AE9CABD006141B6 /* returnArmorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FEF2AE9CABD006141B6 /* returnArmorFunctions.swift */; };
+		94162FF22AE9CDB6006141B6 /* returnRageOverdriveFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FF12AE9CDB6006141B6 /* returnRageOverdriveFunctions.swift */; };
+		94162FF42AEC4DBD006141B6 /* LevelUpConditionalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94162FF32AEC4DBD006141B6 /* LevelUpConditionalSelectionView.swift */; };
+		941C9F422A660A9300AB4B1F /* Path2eApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F412A660A9300AB4B1F /* Path2eApp.swift */; };
+		941C9F442A660A9300AB4B1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F432A660A9300AB4B1F /* ContentView.swift */; };
+		941C9F462A660A9500AB4B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941C9F452A660A9500AB4B1F /* Assets.xcassets */; };
+		941C9F492A660A9500AB4B1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941C9F482A660A9500AB4B1F /* Preview Assets.xcassets */; };
+		941C9F502A6655AB00AB4B1F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F4F2A6655AB00AB4B1F /* Character.swift */; };
+		941C9F562A66F96700AB4B1F /* SharedClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F552A66F96700AB4B1F /* SharedClasses.swift */; };
+		941C9F582A66F97500AB4B1F /* DataClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F572A66F97500AB4B1F /* DataClasses.swift */; };
+		941C9F5B2A67112D00AB4B1F /* DisplayEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F5A2A67112D00AB4B1F /* DisplayEffects.swift */; };
+		941C9F5D2A671AC200AB4B1F /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F5C2A671AC200AB4B1F /* Brain.swift */; };
+		941C9F612A67230400AB4B1F /* ModificationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F602A67230400AB4B1F /* ModificationDisplay.swift */; };
+		941C9F632A672D3700AB4B1F /* TemporaryModificationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F622A672D3700AB4B1F /* TemporaryModificationDisplay.swift */; };
+		941C9F652A673CCE00AB4B1F /* TemporaryEffectDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F642A673CCE00AB4B1F /* TemporaryEffectDisplay.swift */; };
+		941C9F6A2A676A0700AB4B1F /* LoadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F692A676A0700AB4B1F /* LoadDataModel.swift */; };
+		941C9F6C2A676BF800AB4B1F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F6B2A676BF800AB4B1F /* Route.swift */; };
+		941C9F6E2A676D3E00AB4B1F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F6D2A676D3E00AB4B1F /* AppState.swift */; };
+		941C9F702A67B56700AB4B1F /* FeatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F6F2A67B56700AB4B1F /* FeatDisplay.swift */; };
+		941C9F752A68619E00AB4B1F /* ChooseFeatFromListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F742A68619E00AB4B1F /* ChooseFeatFromListView.swift */; };
+		941C9F772A686E6E00AB4B1F /* ChooseFeatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F762A686E6E00AB4B1F /* ChooseFeatListView.swift */; };
+		941C9F7B2A69D22200AB4B1F /* SkillDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F7A2A69D22200AB4B1F /* SkillDisplay.swift */; };
+		941C9F7E2A69FC1700AB4B1F /* SkillSelectionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F7D2A69FC1700AB4B1F /* SkillSelectionDisplay.swift */; };
+		941C9F802A6A10B400AB4B1F /* ProficiencyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C9F7F2A6A10B400AB4B1F /* ProficiencyBoxView.swift */; };
+		9430C7F72A95527E00A2794D /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430C7F62A95527E00A2794D /* CharacterListView.swift */; };
+		9430C7F92A98467700A2794D /* ConditionalDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430C7F82A98467700A2794D /* ConditionalDisplay.swift */; };
+		9434DD9D2A7985E700F3073D /* NewCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DD9C2A7985E700F3073D /* NewCharacterModel.swift */; };
+		9434DD9F2A79964A00F3073D /* NewCharacterBackgroundSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DD9E2A79964A00F3073D /* NewCharacterBackgroundSelectionView.swift */; };
+		9434DDA12A79966F00F3073D /* BackgroundSelectionListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDA02A79966F00F3073D /* BackgroundSelectionListDisplay.swift */; };
+		9434DDA42A799F0F00F3073D /* CharacterBackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDA32A799F0F00F3073D /* CharacterBackgroundExtension.swift */; };
+		9434DDA62A79B04C00F3073D /* AlignmentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDA52A79B04C00F3073D /* AlignmentSelectionView.swift */; };
+		9434DDA92A79C4C200F3073D /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDA82A79C4C200F3073D /* LazyView.swift */; };
+		9434DDAE2A79DAC500F3073D /* LevelUpAbilitiesAndFeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDAD2A79DAC500F3073D /* LevelUpAbilitiesAndFeatsView.swift */; };
+		9434DDB22A79DBC100F3073D /* LevelUpSpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDB12A79DBC100F3073D /* LevelUpSpellView.swift */; };
+		9434DDB42A79DBCF00F3073D /* LevelUpFormulaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDB32A79DBCF00F3073D /* LevelUpFormulaView.swift */; };
+		9434DDBA2A79E0E400F3073D /* LevelUpCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDB92A79E0E400F3073D /* LevelUpCharacterModel.swift */; };
+		9434DDBC2A79E54B00F3073D /* CharacterClassAbilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDBB2A79E54B00F3073D /* CharacterClassAbilityExtension.swift */; };
+		9434DDBE2A79EF7800F3073D /* LevelUpClassAbilitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434DDBD2A79EF7800F3073D /* LevelUpClassAbilitySelectionView.swift */; };
+		943895312A858FD000FF6329 /* LevelUpSpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895302A858FD000FF6329 /* LevelUpSpellListView.swift */; };
+		943895332A85902200FF6329 /* LevelUpSpellSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895322A85902200FF6329 /* LevelUpSpellSelectionView.swift */; };
+		943895352A85C1C200FF6329 /* ChosenSpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895342A85C1C200FF6329 /* ChosenSpellsModel.swift */; };
+		943895372A86DBCF00FF6329 /* LevelUpSignatureSpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895362A86DBCF00FF6329 /* LevelUpSignatureSpellView.swift */; };
+		943895392A89CA6A00FF6329 /* LevelUpSignatureSpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895382A89CA6A00FF6329 /* LevelUpSignatureSpellListView.swift */; };
+		9438953B2A89CA7700FF6329 /* LevelUpSignatureSpellSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438953A2A89CA7700FF6329 /* LevelUpSignatureSpellSelectionView.swift */; };
+		943895432A92EE9E00FF6329 /* returnFormulaFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895422A92EE9E00FF6329 /* returnFormulaFunctions.swift */; };
+		943895452A930B6000FF6329 /* LevelUpFormulaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895442A930B6000FF6329 /* LevelUpFormulaListView.swift */; };
+		943895472A93124D00FF6329 /* LevelUpFormulaSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943895462A93124D00FF6329 /* LevelUpFormulaSelectionView.swift */; };
+		94503CFD2B094994001A6AF3 /* ChosenSpellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94503CFC2B094994001A6AF3 /* ChosenSpellModel.swift */; };
+		94503D032B094D9A001A6AF3 /* ChosenSpellButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94503D022B094D9A001A6AF3 /* ChosenSpellButtonDisplay.swift */; };
+		946ADBA82A70A64F00F8F8DB /* checkChosenFeatureForAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBA72A70A64F00F8F8DB /* checkChosenFeatureForAlerts.swift */; };
+		946ADBAA2A70B0AC00F8F8DB /* Spellcasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBA92A70B0AC00F8F8DB /* Spellcasting.swift */; };
+		946ADBAC2A7199D000F8F8DB /* FeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBAB2A7199D000F8F8DB /* FeatView.swift */; };
+		946ADBAF2A71A51400F8F8DB /* FeatBasicDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBAE2A71A51400F8F8DB /* FeatBasicDisplay.swift */; };
+		946ADBB12A71A55200F8F8DB /* FeatActionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBB02A71A55200F8F8DB /* FeatActionDisplay.swift */; };
+		946ADBB32A71A57500F8F8DB /* FeatDescriptionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBB22A71A57500F8F8DB /* FeatDescriptionDisplay.swift */; };
+		946ADBB52A71A5F400F8F8DB /* ChosenFeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADBB42A71A5F400F8F8DB /* ChosenFeatModel.swift */; };
+		9471EE292B0D43F6002862E5 /* StatTabAbilityScoresDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE282B0D43F6002862E5 /* StatTabAbilityScoresDisplay.swift */; };
+		9471EE2B2B0D4483002862E5 /* StatTabSingleAbilityScoreDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE2A2B0D4483002862E5 /* StatTabSingleAbilityScoreDisplay.swift */; };
+		9471EE2D2B0D4B55002862E5 /* AbilityScoreBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE2C2B0D4B55002862E5 /* AbilityScoreBreakdownView.swift */; };
+		9471EE302B0D685F002862E5 /* RealmManagerCharacterSheetFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE2F2B0D685F002862E5 /* RealmManagerCharacterSheetFunctions.swift */; };
+		9471EE322B0D7BC5002862E5 /* returnConditionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE312B0D7BC5002862E5 /* returnConditionFunctions.swift */; };
+		9471EE342B0D7BFF002862E5 /* CharacterConditionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE332B0D7BFF002862E5 /* CharacterConditionExtension.swift */; };
+		9471EE372B0D8AC4002862E5 /* StatTabSavingThrowsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE362B0D8AC4002862E5 /* StatTabSavingThrowsDisplay.swift */; };
+		9471EE392B0D8B6B002862E5 /* StatTabSingleSavingThrowDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE382B0D8B6B002862E5 /* StatTabSingleSavingThrowDisplay.swift */; };
+		9471EE3B2B0D8C4D002862E5 /* returnSavingThrowFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE3A2B0D8C4D002862E5 /* returnSavingThrowFunctions.swift */; };
+		9471EE3D2B0D8E2D002862E5 /* ProficiencyBoxDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE3C2B0D8E2D002862E5 /* ProficiencyBoxDisplay.swift */; };
+		9471EE3F2B0DBFBC002862E5 /* SavingThrowBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE3E2B0DBFBC002862E5 /* SavingThrowBreakdownView.swift */; };
+		9471EE412B0DE8ED002862E5 /* StatTabHeaderDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE402B0DE8ED002862E5 /* StatTabHeaderDisplay.swift */; };
+		9471EE442B0E8AE6002862E5 /* StatTabEditNameDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE432B0E8AE6002862E5 /* StatTabEditNameDisplay.swift */; };
+		9471EE482B0E95C2002862E5 /* StatTabHeaderAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE472B0E95C2002862E5 /* StatTabHeaderAlignment.swift */; };
+		9471EE4A2B0E95E8002862E5 /* StatTabHeaderChangeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE492B0E95E8002862E5 /* StatTabHeaderChangeAlignment.swift */; };
+		9471EE502B0E9866002862E5 /* StatTabeHeaderLevelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE4F2B0E9866002862E5 /* StatTabeHeaderLevelDisplay.swift */; };
+		9471EE522B0E9897002862E5 /* StatTabHeaderHeritageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE512B0E9897002862E5 /* StatTabHeaderHeritageDisplay.swift */; };
+		9471EE542B0E98B7002862E5 /* StatTabHeaderAncestryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE532B0E98B7002862E5 /* StatTabHeaderAncestryDisplay.swift */; };
+		9471EE562B0E98E8002862E5 /* StatTabHeaderClassDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE552B0E98E8002862E5 /* StatTabHeaderClassDisplay.swift */; };
+		9471EE5A2B0E9C07002862E5 /* StatTabXPDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE592B0E9C07002862E5 /* StatTabXPDisplay.swift */; };
+		9471EE5C2B0E9D08002862E5 /* WithBackgroundProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE5B2B0E9D08002862E5 /* WithBackgroundProgressViewStyle.swift */; };
+		9471EE5E2B0E9F86002862E5 /* StatTabAdjustXPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE5D2B0E9F86002862E5 /* StatTabAdjustXPView.swift */; };
+		9471EE612B11C8C0002862E5 /* StatTabHealthDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE602B11C8C0002862E5 /* StatTabHealthDisplay.swift */; };
+		9471EE632B11D22C002862E5 /* KeyPadDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE622B11D22C002862E5 /* KeyPadDisplay.swift */; };
+		9471EE652B11D268002862E5 /* StatTabAdjustHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE642B11D268002862E5 /* StatTabAdjustHealthView.swift */; };
+		9471EE672B1275F3002862E5 /* returnHealthFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE662B1275F2002862E5 /* returnHealthFunctions.swift */; };
+		9471EE6B2B140E95002862E5 /* StatTabDyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE6A2B140E95002862E5 /* StatTabDyingView.swift */; };
+		9471EE6E2B141754002862E5 /* StatTabCombatStatsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE6D2B141754002862E5 /* StatTabCombatStatsDisplay.swift */; };
+		9471EE702B14179F002862E5 /* StatTabPerceptionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE6F2B14179F002862E5 /* StatTabPerceptionDisplay.swift */; };
+		9471EE722B1417B4002862E5 /* StatTabACDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE712B1417B4002862E5 /* StatTabACDisplay.swift */; };
+		9471EE742B1417C1002862E5 /* StatTabClassDCDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE732B1417C1002862E5 /* StatTabClassDCDisplay.swift */; };
+		9471EE762B14180F002862E5 /* returnPerceptionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE752B14180F002862E5 /* returnPerceptionFunctions.swift */; };
+		9471EE782B141E98002862E5 /* PerceptionBreakDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471EE772B141E98002862E5 /* PerceptionBreakDown.swift */; };
+		94A6C7622A71B9740020B2F7 /* FormulaSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7612A71B9740020B2F7 /* FormulaSelectionView.swift */; };
+		94A6C7642A720A990020B2F7 /* FeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7632A720A990020B2F7 /* FeatSelectionView.swift */; };
+		94A6C7662A7240C60020B2F7 /* ClassAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7652A7240C60020B2F7 /* ClassAbilityView.swift */; };
+		94A6C7692A72420F0020B2F7 /* ClassAbilityBasicDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7682A72420F0020B2F7 /* ClassAbilityBasicDisplay.swift */; };
+		94A6C76B2A72427D0020B2F7 /* ClassAbilityDescriptionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C76A2A72427D0020B2F7 /* ClassAbilityDescriptionDisplay.swift */; };
+		94A6C76F2A7244E70020B2F7 /* ChosenClassAbilityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C76E2A7244E70020B2F7 /* ChosenClassAbilityModel.swift */; };
+		94A6C7712A724B910020B2F7 /* ClassAbilitySelectorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7702A724B910020B2F7 /* ClassAbilitySelectorListView.swift */; };
+		94A6C7732A730EDF0020B2F7 /* ClassAbilitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7722A730EDF0020B2F7 /* ClassAbilitySelectionView.swift */; };
+		94A6C7752A7335440020B2F7 /* ClassFeatureSelectorListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7742A7335440020B2F7 /* ClassFeatureSelectorListDisplay.swift */; };
+		94A6C7772A7335710020B2F7 /* ClassFeatureSelectionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7762A7335710020B2F7 /* ClassFeatureSelectionDisplay.swift */; };
+		94A6C7792A734D6A0020B2F7 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7782A734D6A0020B2F7 /* ClassView.swift */; };
+		94A6C77B2A7350800020B2F7 /* ChosenClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C77A2A7350800020B2F7 /* ChosenClassModel.swift */; };
+		94A6C77E2A735AB80020B2F7 /* ClassAbilityListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C77D2A735AB80020B2F7 /* ClassAbilityListDisplay.swift */; };
+		94A6C7802A73682C0020B2F7 /* AncestryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C77F2A73682C0020B2F7 /* AncestryView.swift */; };
+		94A6C7832A7368460020B2F7 /* HeritageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7822A7368460020B2F7 /* HeritageView.swift */; };
+		94A6C78C2A7375B40020B2F7 /* ChosenHeritageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C78B2A7375B40020B2F7 /* ChosenHeritageModel.swift */; };
+		94A6C78E2A73786E0020B2F7 /* AncestryBasicDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C78D2A73786E0020B2F7 /* AncestryBasicDisplay.swift */; };
+		94A6C7902A7378E40020B2F7 /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C78F2A7378E40020B2F7 /* VisionView.swift */; };
+		94A6C7922A737C870020B2F7 /* ChosenAncestryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7912A737C870020B2F7 /* ChosenAncestryModel.swift */; };
+		94A6C7942A737CFA0020B2F7 /* AncestryAbilityScoreDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7932A737CFA0020B2F7 /* AncestryAbilityScoreDisplay.swift */; };
+		94A6C79A2A7439B70020B2F7 /* AdditionalSense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7992A7439B70020B2F7 /* AdditionalSense.swift */; };
+		94A6C79C2A743A280020B2F7 /* AncestrySenseDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C79B2A743A280020B2F7 /* AncestrySenseDisplay.swift */; };
+		94A6C79F2A743D740020B2F7 /* AncestryPhysicalFeatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C79E2A743D740020B2F7 /* AncestryPhysicalFeatureDisplay.swift */; };
+		94A6C7A22A743F7A0020B2F7 /* ChosenPhysicalFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7A12A743F7A0020B2F7 /* ChosenPhysicalFeatureModel.swift */; };
+		94A6C7A42A7440190020B2F7 /* PhysicalFeatureSelectionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7A32A7440190020B2F7 /* PhysicalFeatureSelectionDisplay.swift */; };
+		94A6C7A62A7447540020B2F7 /* AncestryFeatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7A52A7447540020B2F7 /* AncestryFeatDisplay.swift */; };
+		94A6C7A92A7447B80020B2F7 /* AncestryFeatListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7A82A7447B80020B2F7 /* AncestryFeatListDisplay.swift */; };
+		94A6C7AB2A744BD10020B2F7 /* AncestryHeritageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7AA2A744BD10020B2F7 /* AncestryHeritageDisplay.swift */; };
+		94A6C7AE2A744CE10020B2F7 /* AncestryHeritageListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7AD2A744CE10020B2F7 /* AncestryHeritageListDisplay.swift */; };
+		94A6C7B02A744EFF0020B2F7 /* AncestryLanguageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7AF2A744EFF0020B2F7 /* AncestryLanguageDisplay.swift */; };
+		94A6C7B32A744F990020B2F7 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7B22A744F990020B2F7 /* LanguageView.swift */; };
+		94A6C7B52A7450C50020B2F7 /* AncestryDescriptionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7B42A7450C50020B2F7 /* AncestryDescriptionDisplay.swift */; };
+		94A6C7BB2A74545D0020B2F7 /* ChosenBackgroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6C7BA2A74545D0020B2F7 /* ChosenBackgroundModel.swift */; };
+		94B13C722A7594E300EEA61C /* VersatileHeritageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C712A7594E300EEA61C /* VersatileHeritageView.swift */; };
+		94B13C742A75957E00EEA61C /* ChosenVersatileHeritageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C732A75957E00EEA61C /* ChosenVersatileHeritageModel.swift */; };
+		94B13C7A2A75AA4900EEA61C /* NewCharacterCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C792A75AA4900EEA61C /* NewCharacterCreationView.swift */; };
+		94B13C7C2A75AB2A00EEA61C /* ClassSelectionListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C7B2A75AB2A00EEA61C /* ClassSelectionListDisplay.swift */; };
+		94B13C7E2A75AFB100EEA61C /* NewCharacterClassSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C7D2A75AFB100EEA61C /* NewCharacterClassSelectionView.swift */; };
+		94B13C802A75B89E00EEA61C /* CharacterEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C7F2A75B89E00EEA61C /* CharacterEffectExtension.swift */; };
+		94B13C832A75E27500EEA61C /* CharacterFeatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C822A75E27500EEA61C /* CharacterFeatExtension.swift */; };
+		94B13C852A76D5FF00EEA61C /* GiveCharacterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C842A76D5FF00EEA61C /* GiveCharacterItem.swift */; };
+		94B13C932A77736000EEA61C /* CharacterClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C922A77736000EEA61C /* CharacterClassExtension.swift */; };
+		94B13C962A777D8C00EEA61C /* AncestrySelectionListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C952A777D8C00EEA61C /* AncestrySelectionListDisplay.swift */; };
+		94B13C982A777DA400EEA61C /* NewCharacterAncestrySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C972A777DA400EEA61C /* NewCharacterAncestrySelectionView.swift */; };
+		94B13C9B2A7783DC00EEA61C /* CharacterAncestryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C9A2A7783DC00EEA61C /* CharacterAncestryExtension.swift */; };
+		94B13C9D2A778AE700EEA61C /* CharacterPhysicalFeatureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C9C2A778AE700EEA61C /* CharacterPhysicalFeatureExtension.swift */; };
+		94B13C9F2A782A1E00EEA61C /* CharacterHeritageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13C9E2A782A1E00EEA61C /* CharacterHeritageExtension.swift */; };
+		94B13CA12A782AFB00EEA61C /* CharacterVersatileHeritageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13CA02A782AFB00EEA61C /* CharacterVersatileHeritageExtension.swift */; };
+		94B13CA32A782D7E00EEA61C /* HeritageSelectionListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13CA22A782D7E00EEA61C /* HeritageSelectionListDisplay.swift */; };
+		94B13CA52A782DAA00EEA61C /* NewCharacterHeritageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13CA42A782DAA00EEA61C /* NewCharacterHeritageSelectionView.swift */; };
+		94B13CA72A782DBB00EEA61C /* NewCharacterVersatileHeritageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B13CA62A782DBB00EEA61C /* NewCharacterVersatileHeritageSelectionView.swift */; };
+		94BAB8DE2B055A44008FE3B3 /* SkillClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BAB8DD2B055A44008FE3B3 /* SkillClasses.swift */; };
+		94BAB8E22B058059008FE3B3 /* ChosenConditionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BAB8E12B058059008FE3B3 /* ChosenConditionalModel.swift */; };
+		94BDBA492A6CFBF800CEF379 /* WeaponAndArmorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA482A6CFBF800CEF379 /* WeaponAndArmorDisplay.swift */; };
+		94BDBA4B2A6DA63500CEF379 /* ChooseRageWeaponListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA4A2A6DA63500CEF379 /* ChooseRageWeaponListDisplay.swift */; };
+		94BDBA4D2A6DD07500CEF379 /* ChooseFieldFormulaListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA4C2A6DD07500CEF379 /* ChooseFieldFormulaListDisplay.swift */; };
+		94BDBA4F2A6DDBC900CEF379 /* ChooseAlchemicalFormulaListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA4E2A6DDBC900CEF379 /* ChooseAlchemicalFormulaListDisplay.swift */; };
+		94BDBA512A6DE1AA00CEF379 /* FeatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA502A6DE1AA00CEF379 /* FeatureDisplay.swift */; };
+		94BDBA582A6E166F00CEF379 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA572A6E166F00CEF379 /* Alert.swift */; };
+		94BDBA5A2A6E274100CEF379 /* ConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA592A6E274100CEF379 /* ConditionView.swift */; };
+		94BDBA5D2A6E2ACF00CEF379 /* DeityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA5C2A6E2ACF00CEF379 /* DeityView.swift */; };
+		94BDBA602A6E2AE800CEF379 /* DomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA5F2A6E2AE800CEF379 /* DomainView.swift */; };
+		94BDBA632A6E5FFD00CEF379 /* DeityListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA622A6E5FFD00CEF379 /* DeityListDisplay.swift */; };
+		94BDBA652A6E600900CEF379 /* DomainListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA642A6E600900CEF379 /* DomainListDisplay.swift */; };
+		94BDBA672A6E601C00CEF379 /* AdvancedDomainListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA662A6E601C00CEF379 /* AdvancedDomainListDisplay.swift */; };
+		94BDBA692A6EF20D00CEF379 /* DeitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA682A6EF20D00CEF379 /* DeitySelectionView.swift */; };
+		94BDBA6B2A6F11CE00CEF379 /* DomainSelectionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA6A2A6F11CE00CEF379 /* DomainSelectionDisplay.swift */; };
+		94BDBA6D2A7051E900CEF379 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA6C2A7051E900CEF379 /* ItemView.swift */; };
+		94BDBA702A70549000CEF379 /* ItemBasicDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA6F2A70549000CEF379 /* ItemBasicDisplay.swift */; };
+		94BDBA732A7054DF00CEF379 /* ItemTraitDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA722A7054DF00CEF379 /* ItemTraitDisplay.swift */; };
+		94BDBA752A7056DA00CEF379 /* ItemWeaponDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA742A7056DA00CEF379 /* ItemWeaponDisplay.swift */; };
+		94BDBA772A70572F00CEF379 /* ItemArmorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA762A70572F00CEF379 /* ItemArmorDisplay.swift */; };
+		94BDBA792A70574600CEF379 /* ItemShieldDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA782A70574600CEF379 /* ItemShieldDisplay.swift */; };
+		94BDBA7B2A70577000CEF379 /* ItemStorageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA7A2A70577000CEF379 /* ItemStorageDisplay.swift */; };
+		94BDBA7D2A70578300CEF379 /* ItemRuneDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA7C2A70578300CEF379 /* ItemRuneDisplay.swift */; };
+		94BDBA7F2A7057A800CEF379 /* ItemDescriptionDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA7E2A7057A800CEF379 /* ItemDescriptionDisplay.swift */; };
+		94BDBA812A70900600CEF379 /* ChosenItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA802A70900600CEF379 /* ChosenItemModel.swift */; };
+		94BDBA832A70937600CEF379 /* ItemSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDBA822A70937600CEF379 /* ItemSelectionView.swift */; };
+		94C299A22A6AE7BC0021A000 /* SingleSkillDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299A12A6AE7BC0021A000 /* SingleSkillDisplay.swift */; };
+		94C299A42A6C46D90021A000 /* ChosenFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299A32A6C46D90021A000 /* ChosenFeaturesModel.swift */; };
+		94C299A72A6C9EC50021A000 /* SpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299A62A6C9EC50021A000 /* SpellView.swift */; };
+		94C299AA2A6CA0C90021A000 /* SpellBasicDisplays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299A92A6CA0C90021A000 /* SpellBasicDisplays.swift */; };
+		94C299AC2A6CA2D70021A000 /* TraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299AB2A6CA2D70021A000 /* TraitView.swift */; };
+		94C299AF2A6CA32E0021A000 /* SpellTraitDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299AE2A6CA32E0021A000 /* SpellTraitDisplay.swift */; };
+		94C299B12A6CA3BF0021A000 /* SpellCastingDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299B02A6CA3BF0021A000 /* SpellCastingDisplay.swift */; };
+		94C299B32A6CA4CC0021A000 /* SpellHeightenedDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299B22A6CA4CC0021A000 /* SpellHeightenedDisplay.swift */; };
+		94C299B52A6CA6230021A000 /* SpellSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299B42A6CA6230021A000 /* SpellSelectionView.swift */; };
+		94C299B72A6CA6930021A000 /* SpellDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299B62A6CA6930021A000 /* SpellDisplay.swift */; };
+		94C299C02A6CBC880021A000 /* data.realm in Resources */ = {isa = PBXBuildFile; fileRef = 94C299BF2A6CBC800021A000 /* data.realm */; };
+		94C299C22A6CCCA60021A000 /* ChooseSpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C299C12A6CCCA60021A000 /* ChooseSpellListView.swift */; };
+		94C9084D2AD3BFB400EB5A01 /* LevelUpPreparedListListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9084C2AD3BFB400EB5A01 /* LevelUpPreparedListListView.swift */; };
+		94C9084F2AD8B1A400EB5A01 /* returnEffectFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9084E2AD8B1A400EB5A01 /* returnEffectFunctions.swift */; };
+		94C908512ADA34B000EB5A01 /* CharacterFormulaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C908502ADA34B000EB5A01 /* CharacterFormulaExtension.swift */; };
+		94C908532ADCF8E600EB5A01 /* LevelUpFormulaCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C908522ADCF8E600EB5A01 /* LevelUpFormulaCategoryListView.swift */; };
+		94C908552ADE5DA300EB5A01 /* ChooseAlchemicalFormulaCategoryListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C908542ADE5DA300EB5A01 /* ChooseAlchemicalFormulaCategoryListDisplay.swift */; };
+		94D850712B14311500BEBC15 /* returnClassDCFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850702B14311500BEBC15 /* returnClassDCFunctions.swift */; };
+		94D850732B14356500BEBC15 /* ClassDCBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850722B14356500BEBC15 /* ClassDCBreakdown.swift */; };
+		94D850792B153A2B00BEBC15 /* ACBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850782B153A2B00BEBC15 /* ACBreakdown.swift */; };
+		94D8507C2B166CB300BEBC15 /* StatTabSpeedDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8507B2B166CB300BEBC15 /* StatTabSpeedDisplay.swift */; };
+		94D8507E2B166DB900BEBC15 /* returnSpeedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8507D2B166DB900BEBC15 /* returnSpeedFunctions.swift */; };
+		94D850802B16835500BEBC15 /* StatTabSingleSpeedDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8507F2B16835500BEBC15 /* StatTabSingleSpeedDisplay.swift */; };
+		94D850822B16836500BEBC15 /* SpeedBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850812B16836500BEBC15 /* SpeedBreakdownView.swift */; };
+		94D850842B16C7DE00BEBC15 /* StatTabLanguagesDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850832B16C7DE00BEBC15 /* StatTabLanguagesDisplay.swift */; };
+		94D8508F2B171BC800BEBC15 /* StatTabArmorProficiencyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8508E2B171BC800BEBC15 /* StatTabArmorProficiencyDisplay.swift */; };
+		94D850912B171C2A00BEBC15 /* StatTabWeaponProficiencyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850902B171C2A00BEBC15 /* StatTabWeaponProficiencyDisplay.swift */; };
+		94D850932B171CAA00BEBC15 /* StatTabSingleArmorProficiencyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850922B171CAA00BEBC15 /* StatTabSingleArmorProficiencyDisplay.swift */; };
+		94D850952B18471F00BEBC15 /* StatTabSingleWeaponProficiencyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850942B18471F00BEBC15 /* StatTabSingleWeaponProficiencyDisplay.swift */; };
+		94D850982B184DBB00BEBC15 /* returnWeaponFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D850972B184DBB00BEBC15 /* returnWeaponFunctions.swift */; };
+		94DEEEC82ACF8F58005406AC /* returnLevelUpFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DEEEC72ACF8F58005406AC /* returnLevelUpFunctions.swift */; };
+		94DEEECA2ACFB5D5005406AC /* ChosenSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DEEEC92ACFB5D5005406AC /* ChosenSkill.swift */; };
+		94DEEECC2AD0E38B005406AC /* CharacterSpellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DEEECB2AD0E38B005406AC /* CharacterSpellExtension.swift */; };
+		94F0E6362A7AF79600303BF4 /* LevelUpAncestryFeatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6352A7AF79600303BF4 /* LevelUpAncestryFeatListView.swift */; };
+		94F0E6382A7AF7A500303BF4 /* LevelUpAncestryFeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6372A7AF7A500303BF4 /* LevelUpAncestryFeatSelectionView.swift */; };
+		94F0E63D2A7C7F1E00303BF4 /* returnAbilityScoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E63C2A7C7F1E00303BF4 /* returnAbilityScoreFunctions.swift */; };
+		94F0E6402A7C934000303BF4 /* returnOtherFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E63F2A7C934000303BF4 /* returnOtherFunctions.swift */; };
+		94F0E6422A7C97E200303BF4 /* returnSkillFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6412A7C97E200303BF4 /* returnSkillFunctions.swift */; };
+		94F0E6442A7D634C00303BF4 /* returnTraitFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6432A7D634C00303BF4 /* returnTraitFunctions.swift */; };
+		94F0E6462A7D654600303BF4 /* returnReligionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6452A7D654600303BF4 /* returnReligionFunctions.swift */; };
+		94F0E6482A7D657300303BF4 /* returnSpellFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6472A7D657300303BF4 /* returnSpellFunctions.swift */; };
+		94F0E64A2A7D658A00303BF4 /* returnLanguageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6492A7D658A00303BF4 /* returnLanguageFunctions.swift */; };
+		94F0E64C2A7D6BD400303BF4 /* LevelUpLevelOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E64B2A7D6BD400303BF4 /* LevelUpLevelOneView.swift */; };
+		94F0E6522A82FCF600303BF4 /* LevelUpSelectorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6512A82FCF600303BF4 /* LevelUpSelectorListView.swift */; };
+		94F0E6542A82FD0300303BF4 /* LevelUpSelectorSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0E6532A82FD0300303BF4 /* LevelUpSelectorSelectionView.swift */; };
+		94FF9E4C2AC100F200E9C58C /* ConditionalSpellDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E4B2AC100F200E9C58C /* ConditionalSpellDisplay.swift */; };
+		94FF9E4E2AC101D200E9C58C /* ConditionalSkillDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E4D2AC101D200E9C58C /* ConditionalSkillDisplay.swift */; };
+		94FF9E502AC1026600E9C58C /* ConditionalFeatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E4F2AC1026600E9C58C /* ConditionalFeatDisplay.swift */; };
+		94FF9E522AC1035C00E9C58C /* ConditionalWAADisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E512AC1035C00E9C58C /* ConditionalWAADisplay.swift */; };
+		94FF9E562AC1050300E9C58C /* ConditionalTemporaryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E552AC1050300E9C58C /* ConditionalTemporaryDisplay.swift */; };
+		94FF9E582AC378DA00E9C58C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E572AC378DA00E9C58C /* Preferences.swift */; };
+		94FF9E602AC7D30700E9C58C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9E5F2AC7D30700E9C58C /* RealmManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77D94A78BDB4C6ABC53A706C /* Pods-Path2e.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Path2e.debug.xcconfig"; path = "Target Support Files/Pods-Path2e/Pods-Path2e.debug.xcconfig"; sourceTree = "<group>"; };
+		941548762B0962AA00D54729 /* SpellListButtonDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListButtonDisplay.swift; sourceTree = "<group>"; };
+		941548782B0972C600D54729 /* ChooseSpellFromListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSpellFromListView.swift; sourceTree = "<group>"; };
+		9415487B2B099C0100D54729 /* ChosenFormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenFormulaModel.swift; sourceTree = "<group>"; };
+		9415487E2B0A983A00D54729 /* AbilityBoostSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityBoostSelectionView.swift; sourceTree = "<group>"; };
+		941548802B0A989B00D54729 /* AbilityScoreClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoreClasses.swift; sourceTree = "<group>"; };
+		941548822B0AB0F000D54729 /* ChosenAbilityBoostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenAbilityBoostModel.swift; sourceTree = "<group>"; };
+		941548842B0AB20800D54729 /* SingleAbilityDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAbilityDisplay.swift; sourceTree = "<group>"; };
+		941548872B0C6DC600D54729 /* CharacterSheetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetTabView.swift; sourceTree = "<group>"; };
+		9415488A2B0D354400D54729 /* StatTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabView.swift; sourceTree = "<group>"; };
+		94162FDD2ADF8557006141B6 /* ConditionalFeatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalFeatureDisplay.swift; sourceTree = "<group>"; };
+		94162FDF2AE056C2006141B6 /* ConditionalOtherDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalOtherDisplay.swift; sourceTree = "<group>"; };
+		94162FE22AE19D07006141B6 /* LevelUpConditionalChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpConditionalChangeView.swift; sourceTree = "<group>"; };
+		94162FE42AE1C5B3006141B6 /* CharacterConditionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConditionalExtension.swift; sourceTree = "<group>"; };
+		94162FE72AE2169A006141B6 /* returnCharacterObjectFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnCharacterObjectFunctions.swift; sourceTree = "<group>"; };
+		94162FE92AE216B4006141B6 /* returnConditionalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnConditionalFunctions.swift; sourceTree = "<group>"; };
+		94162FED2AE9CAB4006141B6 /* returnAttackFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnAttackFunctions.swift; sourceTree = "<group>"; };
+		94162FEF2AE9CABD006141B6 /* returnArmorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnArmorFunctions.swift; sourceTree = "<group>"; };
+		94162FF12AE9CDB6006141B6 /* returnRageOverdriveFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnRageOverdriveFunctions.swift; sourceTree = "<group>"; };
+		94162FF32AEC4DBD006141B6 /* LevelUpConditionalSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpConditionalSelectionView.swift; sourceTree = "<group>"; };
+		941C9F3E2A660A9300AB4B1F /* Path2e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Path2e.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		941C9F412A660A9300AB4B1F /* Path2eApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path2eApp.swift; sourceTree = "<group>"; };
+		941C9F432A660A9300AB4B1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		941C9F452A660A9500AB4B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		941C9F482A660A9500AB4B1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		941C9F4F2A6655AB00AB4B1F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		941C9F552A66F96700AB4B1F /* SharedClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedClasses.swift; sourceTree = "<group>"; };
+		941C9F572A66F97500AB4B1F /* DataClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClasses.swift; sourceTree = "<group>"; };
+		941C9F5A2A67112D00AB4B1F /* DisplayEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEffects.swift; sourceTree = "<group>"; };
+		941C9F5C2A671AC200AB4B1F /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		941C9F602A67230400AB4B1F /* ModificationDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificationDisplay.swift; sourceTree = "<group>"; };
+		941C9F622A672D3700AB4B1F /* TemporaryModificationDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryModificationDisplay.swift; sourceTree = "<group>"; };
+		941C9F642A673CCE00AB4B1F /* TemporaryEffectDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryEffectDisplay.swift; sourceTree = "<group>"; };
+		941C9F692A676A0700AB4B1F /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
+		941C9F6B2A676BF800AB4B1F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		941C9F6D2A676D3E00AB4B1F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		941C9F6F2A67B56700AB4B1F /* FeatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatDisplay.swift; sourceTree = "<group>"; };
+		941C9F742A68619E00AB4B1F /* ChooseFeatFromListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFeatFromListView.swift; sourceTree = "<group>"; };
+		941C9F762A686E6E00AB4B1F /* ChooseFeatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFeatListView.swift; sourceTree = "<group>"; };
+		941C9F7A2A69D22200AB4B1F /* SkillDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDisplay.swift; sourceTree = "<group>"; };
+		941C9F7D2A69FC1700AB4B1F /* SkillSelectionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillSelectionDisplay.swift; sourceTree = "<group>"; };
+		941C9F7F2A6A10B400AB4B1F /* ProficiencyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyBoxView.swift; sourceTree = "<group>"; };
+		9430C7F62A95527E00A2794D /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		9430C7F82A98467700A2794D /* ConditionalDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalDisplay.swift; sourceTree = "<group>"; };
+		9434DD9C2A7985E700F3073D /* NewCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterModel.swift; sourceTree = "<group>"; };
+		9434DD9E2A79964A00F3073D /* NewCharacterBackgroundSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterBackgroundSelectionView.swift; sourceTree = "<group>"; };
+		9434DDA02A79966F00F3073D /* BackgroundSelectionListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSelectionListDisplay.swift; sourceTree = "<group>"; };
+		9434DDA32A799F0F00F3073D /* CharacterBackgroundExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBackgroundExtension.swift; sourceTree = "<group>"; };
+		9434DDA52A79B04C00F3073D /* AlignmentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentSelectionView.swift; sourceTree = "<group>"; };
+		9434DDA82A79C4C200F3073D /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		9434DDAD2A79DAC500F3073D /* LevelUpAbilitiesAndFeatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAbilitiesAndFeatsView.swift; sourceTree = "<group>"; };
+		9434DDB12A79DBC100F3073D /* LevelUpSpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSpellView.swift; sourceTree = "<group>"; };
+		9434DDB32A79DBCF00F3073D /* LevelUpFormulaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpFormulaView.swift; sourceTree = "<group>"; };
+		9434DDB92A79E0E400F3073D /* LevelUpCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpCharacterModel.swift; sourceTree = "<group>"; };
+		9434DDBB2A79E54B00F3073D /* CharacterClassAbilityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassAbilityExtension.swift; sourceTree = "<group>"; };
+		9434DDBD2A79EF7800F3073D /* LevelUpClassAbilitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpClassAbilitySelectionView.swift; sourceTree = "<group>"; };
+		943895302A858FD000FF6329 /* LevelUpSpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSpellListView.swift; sourceTree = "<group>"; };
+		943895322A85902200FF6329 /* LevelUpSpellSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSpellSelectionView.swift; sourceTree = "<group>"; };
+		943895342A85C1C200FF6329 /* ChosenSpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSpellsModel.swift; sourceTree = "<group>"; };
+		943895362A86DBCF00FF6329 /* LevelUpSignatureSpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSignatureSpellView.swift; sourceTree = "<group>"; };
+		943895382A89CA6A00FF6329 /* LevelUpSignatureSpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSignatureSpellListView.swift; sourceTree = "<group>"; };
+		9438953A2A89CA7700FF6329 /* LevelUpSignatureSpellSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSignatureSpellSelectionView.swift; sourceTree = "<group>"; };
+		943895422A92EE9E00FF6329 /* returnFormulaFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnFormulaFunctions.swift; sourceTree = "<group>"; };
+		943895442A930B6000FF6329 /* LevelUpFormulaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpFormulaListView.swift; sourceTree = "<group>"; };
+		943895462A93124D00FF6329 /* LevelUpFormulaSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpFormulaSelectionView.swift; sourceTree = "<group>"; };
+		94503CFC2B094994001A6AF3 /* ChosenSpellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSpellModel.swift; sourceTree = "<group>"; };
+		94503D022B094D9A001A6AF3 /* ChosenSpellButtonDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSpellButtonDisplay.swift; sourceTree = "<group>"; };
+		946ADBA72A70A64F00F8F8DB /* checkChosenFeatureForAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkChosenFeatureForAlerts.swift; sourceTree = "<group>"; };
+		946ADBA92A70B0AC00F8F8DB /* Spellcasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spellcasting.swift; sourceTree = "<group>"; };
+		946ADBAB2A7199D000F8F8DB /* FeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatView.swift; sourceTree = "<group>"; };
+		946ADBAE2A71A51400F8F8DB /* FeatBasicDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatBasicDisplay.swift; sourceTree = "<group>"; };
+		946ADBB02A71A55200F8F8DB /* FeatActionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatActionDisplay.swift; sourceTree = "<group>"; };
+		946ADBB22A71A57500F8F8DB /* FeatDescriptionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatDescriptionDisplay.swift; sourceTree = "<group>"; };
+		946ADBB42A71A5F400F8F8DB /* ChosenFeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenFeatModel.swift; sourceTree = "<group>"; };
+		9471EE282B0D43F6002862E5 /* StatTabAbilityScoresDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabAbilityScoresDisplay.swift; sourceTree = "<group>"; };
+		9471EE2A2B0D4483002862E5 /* StatTabSingleAbilityScoreDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSingleAbilityScoreDisplay.swift; sourceTree = "<group>"; };
+		9471EE2C2B0D4B55002862E5 /* AbilityScoreBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoreBreakdownView.swift; sourceTree = "<group>"; };
+		9471EE2F2B0D685F002862E5 /* RealmManagerCharacterSheetFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerCharacterSheetFunctions.swift; sourceTree = "<group>"; };
+		9471EE312B0D7BC5002862E5 /* returnConditionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnConditionFunctions.swift; sourceTree = "<group>"; };
+		9471EE332B0D7BFF002862E5 /* CharacterConditionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConditionExtension.swift; sourceTree = "<group>"; };
+		9471EE362B0D8AC4002862E5 /* StatTabSavingThrowsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSavingThrowsDisplay.swift; sourceTree = "<group>"; };
+		9471EE382B0D8B6B002862E5 /* StatTabSingleSavingThrowDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSingleSavingThrowDisplay.swift; sourceTree = "<group>"; };
+		9471EE3A2B0D8C4D002862E5 /* returnSavingThrowFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnSavingThrowFunctions.swift; sourceTree = "<group>"; };
+		9471EE3C2B0D8E2D002862E5 /* ProficiencyBoxDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyBoxDisplay.swift; sourceTree = "<group>"; };
+		9471EE3E2B0DBFBC002862E5 /* SavingThrowBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowBreakdownView.swift; sourceTree = "<group>"; };
+		9471EE402B0DE8ED002862E5 /* StatTabHeaderDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderDisplay.swift; sourceTree = "<group>"; };
+		9471EE432B0E8AE6002862E5 /* StatTabEditNameDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabEditNameDisplay.swift; sourceTree = "<group>"; };
+		9471EE472B0E95C2002862E5 /* StatTabHeaderAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderAlignment.swift; sourceTree = "<group>"; };
+		9471EE492B0E95E8002862E5 /* StatTabHeaderChangeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderChangeAlignment.swift; sourceTree = "<group>"; };
+		9471EE4F2B0E9866002862E5 /* StatTabeHeaderLevelDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabeHeaderLevelDisplay.swift; sourceTree = "<group>"; };
+		9471EE512B0E9897002862E5 /* StatTabHeaderHeritageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderHeritageDisplay.swift; sourceTree = "<group>"; };
+		9471EE532B0E98B7002862E5 /* StatTabHeaderAncestryDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderAncestryDisplay.swift; sourceTree = "<group>"; };
+		9471EE552B0E98E8002862E5 /* StatTabHeaderClassDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHeaderClassDisplay.swift; sourceTree = "<group>"; };
+		9471EE592B0E9C07002862E5 /* StatTabXPDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabXPDisplay.swift; sourceTree = "<group>"; };
+		9471EE5B2B0E9D08002862E5 /* WithBackgroundProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithBackgroundProgressViewStyle.swift; sourceTree = "<group>"; };
+		9471EE5D2B0E9F86002862E5 /* StatTabAdjustXPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabAdjustXPView.swift; sourceTree = "<group>"; };
+		9471EE602B11C8C0002862E5 /* StatTabHealthDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabHealthDisplay.swift; sourceTree = "<group>"; };
+		9471EE622B11D22C002862E5 /* KeyPadDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadDisplay.swift; sourceTree = "<group>"; };
+		9471EE642B11D268002862E5 /* StatTabAdjustHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabAdjustHealthView.swift; sourceTree = "<group>"; };
+		9471EE662B1275F2002862E5 /* returnHealthFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnHealthFunctions.swift; sourceTree = "<group>"; };
+		9471EE6A2B140E95002862E5 /* StatTabDyingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabDyingView.swift; sourceTree = "<group>"; };
+		9471EE6D2B141754002862E5 /* StatTabCombatStatsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabCombatStatsDisplay.swift; sourceTree = "<group>"; };
+		9471EE6F2B14179F002862E5 /* StatTabPerceptionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabPerceptionDisplay.swift; sourceTree = "<group>"; };
+		9471EE712B1417B4002862E5 /* StatTabACDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabACDisplay.swift; sourceTree = "<group>"; };
+		9471EE732B1417C1002862E5 /* StatTabClassDCDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabClassDCDisplay.swift; sourceTree = "<group>"; };
+		9471EE752B14180F002862E5 /* returnPerceptionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnPerceptionFunctions.swift; sourceTree = "<group>"; };
+		9471EE772B141E98002862E5 /* PerceptionBreakDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionBreakDown.swift; sourceTree = "<group>"; };
+		94A6C7612A71B9740020B2F7 /* FormulaSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaSelectionView.swift; sourceTree = "<group>"; };
+		94A6C7632A720A990020B2F7 /* FeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatSelectionView.swift; sourceTree = "<group>"; };
+		94A6C7652A7240C60020B2F7 /* ClassAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilityView.swift; sourceTree = "<group>"; };
+		94A6C7682A72420F0020B2F7 /* ClassAbilityBasicDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilityBasicDisplay.swift; sourceTree = "<group>"; };
+		94A6C76A2A72427D0020B2F7 /* ClassAbilityDescriptionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilityDescriptionDisplay.swift; sourceTree = "<group>"; };
+		94A6C76E2A7244E70020B2F7 /* ChosenClassAbilityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenClassAbilityModel.swift; sourceTree = "<group>"; };
+		94A6C7702A724B910020B2F7 /* ClassAbilitySelectorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilitySelectorListView.swift; sourceTree = "<group>"; };
+		94A6C7722A730EDF0020B2F7 /* ClassAbilitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilitySelectionView.swift; sourceTree = "<group>"; };
+		94A6C7742A7335440020B2F7 /* ClassFeatureSelectorListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassFeatureSelectorListDisplay.swift; sourceTree = "<group>"; };
+		94A6C7762A7335710020B2F7 /* ClassFeatureSelectionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassFeatureSelectionDisplay.swift; sourceTree = "<group>"; };
+		94A6C7782A734D6A0020B2F7 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
+		94A6C77A2A7350800020B2F7 /* ChosenClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenClassModel.swift; sourceTree = "<group>"; };
+		94A6C77D2A735AB80020B2F7 /* ClassAbilityListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilityListDisplay.swift; sourceTree = "<group>"; };
+		94A6C77F2A73682C0020B2F7 /* AncestryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryView.swift; sourceTree = "<group>"; };
+		94A6C7822A7368460020B2F7 /* HeritageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeritageView.swift; sourceTree = "<group>"; };
+		94A6C78B2A7375B40020B2F7 /* ChosenHeritageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenHeritageModel.swift; sourceTree = "<group>"; };
+		94A6C78D2A73786E0020B2F7 /* AncestryBasicDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryBasicDisplay.swift; sourceTree = "<group>"; };
+		94A6C78F2A7378E40020B2F7 /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
+		94A6C7912A737C870020B2F7 /* ChosenAncestryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenAncestryModel.swift; sourceTree = "<group>"; };
+		94A6C7932A737CFA0020B2F7 /* AncestryAbilityScoreDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryAbilityScoreDisplay.swift; sourceTree = "<group>"; };
+		94A6C7992A7439B70020B2F7 /* AdditionalSense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalSense.swift; sourceTree = "<group>"; };
+		94A6C79B2A743A280020B2F7 /* AncestrySenseDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestrySenseDisplay.swift; sourceTree = "<group>"; };
+		94A6C79E2A743D740020B2F7 /* AncestryPhysicalFeatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryPhysicalFeatureDisplay.swift; sourceTree = "<group>"; };
+		94A6C7A12A743F7A0020B2F7 /* ChosenPhysicalFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenPhysicalFeatureModel.swift; sourceTree = "<group>"; };
+		94A6C7A32A7440190020B2F7 /* PhysicalFeatureSelectionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalFeatureSelectionDisplay.swift; sourceTree = "<group>"; };
+		94A6C7A52A7447540020B2F7 /* AncestryFeatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryFeatDisplay.swift; sourceTree = "<group>"; };
+		94A6C7A82A7447B80020B2F7 /* AncestryFeatListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryFeatListDisplay.swift; sourceTree = "<group>"; };
+		94A6C7AA2A744BD10020B2F7 /* AncestryHeritageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryHeritageDisplay.swift; sourceTree = "<group>"; };
+		94A6C7AD2A744CE10020B2F7 /* AncestryHeritageListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryHeritageListDisplay.swift; sourceTree = "<group>"; };
+		94A6C7AF2A744EFF0020B2F7 /* AncestryLanguageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryLanguageDisplay.swift; sourceTree = "<group>"; };
+		94A6C7B22A744F990020B2F7 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		94A6C7B42A7450C50020B2F7 /* AncestryDescriptionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestryDescriptionDisplay.swift; sourceTree = "<group>"; };
+		94A6C7BA2A74545D0020B2F7 /* ChosenBackgroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenBackgroundModel.swift; sourceTree = "<group>"; };
+		94B13C712A7594E300EEA61C /* VersatileHeritageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersatileHeritageView.swift; sourceTree = "<group>"; };
+		94B13C732A75957E00EEA61C /* ChosenVersatileHeritageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenVersatileHeritageModel.swift; sourceTree = "<group>"; };
+		94B13C792A75AA4900EEA61C /* NewCharacterCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterCreationView.swift; sourceTree = "<group>"; };
+		94B13C7B2A75AB2A00EEA61C /* ClassSelectionListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSelectionListDisplay.swift; sourceTree = "<group>"; };
+		94B13C7D2A75AFB100EEA61C /* NewCharacterClassSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterClassSelectionView.swift; sourceTree = "<group>"; };
+		94B13C7F2A75B89E00EEA61C /* CharacterEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEffectExtension.swift; sourceTree = "<group>"; };
+		94B13C822A75E27500EEA61C /* CharacterFeatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeatExtension.swift; sourceTree = "<group>"; };
+		94B13C842A76D5FF00EEA61C /* GiveCharacterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveCharacterItem.swift; sourceTree = "<group>"; };
+		94B13C922A77736000EEA61C /* CharacterClassExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassExtension.swift; sourceTree = "<group>"; };
+		94B13C952A777D8C00EEA61C /* AncestrySelectionListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncestrySelectionListDisplay.swift; sourceTree = "<group>"; };
+		94B13C972A777DA400EEA61C /* NewCharacterAncestrySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterAncestrySelectionView.swift; sourceTree = "<group>"; };
+		94B13C9A2A7783DC00EEA61C /* CharacterAncestryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAncestryExtension.swift; sourceTree = "<group>"; };
+		94B13C9C2A778AE700EEA61C /* CharacterPhysicalFeatureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPhysicalFeatureExtension.swift; sourceTree = "<group>"; };
+		94B13C9E2A782A1E00EEA61C /* CharacterHeritageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeritageExtension.swift; sourceTree = "<group>"; };
+		94B13CA02A782AFB00EEA61C /* CharacterVersatileHeritageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVersatileHeritageExtension.swift; sourceTree = "<group>"; };
+		94B13CA22A782D7E00EEA61C /* HeritageSelectionListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeritageSelectionListDisplay.swift; sourceTree = "<group>"; };
+		94B13CA42A782DAA00EEA61C /* NewCharacterHeritageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterHeritageSelectionView.swift; sourceTree = "<group>"; };
+		94B13CA62A782DBB00EEA61C /* NewCharacterVersatileHeritageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterVersatileHeritageSelectionView.swift; sourceTree = "<group>"; };
+		94BAB8DD2B055A44008FE3B3 /* SkillClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillClasses.swift; sourceTree = "<group>"; };
+		94BAB8E12B058059008FE3B3 /* ChosenConditionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenConditionalModel.swift; sourceTree = "<group>"; };
+		94BDBA482A6CFBF800CEF379 /* WeaponAndArmorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAndArmorDisplay.swift; sourceTree = "<group>"; };
+		94BDBA4A2A6DA63500CEF379 /* ChooseRageWeaponListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRageWeaponListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA4C2A6DD07500CEF379 /* ChooseFieldFormulaListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFieldFormulaListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA4E2A6DDBC900CEF379 /* ChooseAlchemicalFormulaListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAlchemicalFormulaListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA502A6DE1AA00CEF379 /* FeatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureDisplay.swift; sourceTree = "<group>"; };
+		94BDBA572A6E166F00CEF379 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		94BDBA592A6E274100CEF379 /* ConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionView.swift; sourceTree = "<group>"; };
+		94BDBA5C2A6E2ACF00CEF379 /* DeityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeityView.swift; sourceTree = "<group>"; };
+		94BDBA5F2A6E2AE800CEF379 /* DomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainView.swift; sourceTree = "<group>"; };
+		94BDBA622A6E5FFD00CEF379 /* DeityListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeityListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA642A6E600900CEF379 /* DomainListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA662A6E601C00CEF379 /* AdvancedDomainListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedDomainListDisplay.swift; sourceTree = "<group>"; };
+		94BDBA682A6EF20D00CEF379 /* DeitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeitySelectionView.swift; sourceTree = "<group>"; };
+		94BDBA6A2A6F11CE00CEF379 /* DomainSelectionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainSelectionDisplay.swift; sourceTree = "<group>"; };
+		94BDBA6C2A7051E900CEF379 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		94BDBA6F2A70549000CEF379 /* ItemBasicDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBasicDisplay.swift; sourceTree = "<group>"; };
+		94BDBA722A7054DF00CEF379 /* ItemTraitDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTraitDisplay.swift; sourceTree = "<group>"; };
+		94BDBA742A7056DA00CEF379 /* ItemWeaponDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemWeaponDisplay.swift; sourceTree = "<group>"; };
+		94BDBA762A70572F00CEF379 /* ItemArmorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemArmorDisplay.swift; sourceTree = "<group>"; };
+		94BDBA782A70574600CEF379 /* ItemShieldDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShieldDisplay.swift; sourceTree = "<group>"; };
+		94BDBA7A2A70577000CEF379 /* ItemStorageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorageDisplay.swift; sourceTree = "<group>"; };
+		94BDBA7C2A70578300CEF379 /* ItemRuneDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRuneDisplay.swift; sourceTree = "<group>"; };
+		94BDBA7E2A7057A800CEF379 /* ItemDescriptionDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescriptionDisplay.swift; sourceTree = "<group>"; };
+		94BDBA802A70900600CEF379 /* ChosenItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenItemModel.swift; sourceTree = "<group>"; };
+		94BDBA822A70937600CEF379 /* ItemSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectionView.swift; sourceTree = "<group>"; };
+		94C299A12A6AE7BC0021A000 /* SingleSkillDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSkillDisplay.swift; sourceTree = "<group>"; };
+		94C299A32A6C46D90021A000 /* ChosenFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenFeaturesModel.swift; sourceTree = "<group>"; };
+		94C299A62A6C9EC50021A000 /* SpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellView.swift; sourceTree = "<group>"; };
+		94C299A92A6CA0C90021A000 /* SpellBasicDisplays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBasicDisplays.swift; sourceTree = "<group>"; };
+		94C299AB2A6CA2D70021A000 /* TraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitView.swift; sourceTree = "<group>"; };
+		94C299AE2A6CA32E0021A000 /* SpellTraitDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellTraitDisplay.swift; sourceTree = "<group>"; };
+		94C299B02A6CA3BF0021A000 /* SpellCastingDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCastingDisplay.swift; sourceTree = "<group>"; };
+		94C299B22A6CA4CC0021A000 /* SpellHeightenedDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellHeightenedDisplay.swift; sourceTree = "<group>"; };
+		94C299B42A6CA6230021A000 /* SpellSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSelectionView.swift; sourceTree = "<group>"; };
+		94C299B62A6CA6930021A000 /* SpellDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDisplay.swift; sourceTree = "<group>"; };
+		94C299BF2A6CBC800021A000 /* data.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.realm; sourceTree = "<group>"; };
+		94C299C12A6CCCA60021A000 /* ChooseSpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSpellListView.swift; sourceTree = "<group>"; };
+		94C9084C2AD3BFB400EB5A01 /* LevelUpPreparedListListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpPreparedListListView.swift; sourceTree = "<group>"; };
+		94C9084E2AD8B1A400EB5A01 /* returnEffectFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnEffectFunctions.swift; sourceTree = "<group>"; };
+		94C908502ADA34B000EB5A01 /* CharacterFormulaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFormulaExtension.swift; sourceTree = "<group>"; };
+		94C908522ADCF8E600EB5A01 /* LevelUpFormulaCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpFormulaCategoryListView.swift; sourceTree = "<group>"; };
+		94C908542ADE5DA300EB5A01 /* ChooseAlchemicalFormulaCategoryListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAlchemicalFormulaCategoryListDisplay.swift; sourceTree = "<group>"; };
+		94D850702B14311500BEBC15 /* returnClassDCFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnClassDCFunctions.swift; sourceTree = "<group>"; };
+		94D850722B14356500BEBC15 /* ClassDCBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDCBreakdown.swift; sourceTree = "<group>"; };
+		94D850782B153A2B00BEBC15 /* ACBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACBreakdown.swift; sourceTree = "<group>"; };
+		94D8507B2B166CB300BEBC15 /* StatTabSpeedDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSpeedDisplay.swift; sourceTree = "<group>"; };
+		94D8507D2B166DB900BEBC15 /* returnSpeedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnSpeedFunctions.swift; sourceTree = "<group>"; };
+		94D8507F2B16835500BEBC15 /* StatTabSingleSpeedDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSingleSpeedDisplay.swift; sourceTree = "<group>"; };
+		94D850812B16836500BEBC15 /* SpeedBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedBreakdownView.swift; sourceTree = "<group>"; };
+		94D850832B16C7DE00BEBC15 /* StatTabLanguagesDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabLanguagesDisplay.swift; sourceTree = "<group>"; };
+		94D8508E2B171BC800BEBC15 /* StatTabArmorProficiencyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabArmorProficiencyDisplay.swift; sourceTree = "<group>"; };
+		94D850902B171C2A00BEBC15 /* StatTabWeaponProficiencyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabWeaponProficiencyDisplay.swift; sourceTree = "<group>"; };
+		94D850922B171CAA00BEBC15 /* StatTabSingleArmorProficiencyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSingleArmorProficiencyDisplay.swift; sourceTree = "<group>"; };
+		94D850942B18471F00BEBC15 /* StatTabSingleWeaponProficiencyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabSingleWeaponProficiencyDisplay.swift; sourceTree = "<group>"; };
+		94D850972B184DBB00BEBC15 /* returnWeaponFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnWeaponFunctions.swift; sourceTree = "<group>"; };
+		94DEEEC72ACF8F58005406AC /* returnLevelUpFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnLevelUpFunctions.swift; sourceTree = "<group>"; };
+		94DEEEC92ACFB5D5005406AC /* ChosenSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSkill.swift; sourceTree = "<group>"; };
+		94DEEECB2AD0E38B005406AC /* CharacterSpellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSpellExtension.swift; sourceTree = "<group>"; };
+		94F0E6352A7AF79600303BF4 /* LevelUpAncestryFeatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAncestryFeatListView.swift; sourceTree = "<group>"; };
+		94F0E6372A7AF7A500303BF4 /* LevelUpAncestryFeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAncestryFeatSelectionView.swift; sourceTree = "<group>"; };
+		94F0E63C2A7C7F1E00303BF4 /* returnAbilityScoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnAbilityScoreFunctions.swift; sourceTree = "<group>"; };
+		94F0E63F2A7C934000303BF4 /* returnOtherFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnOtherFunctions.swift; sourceTree = "<group>"; };
+		94F0E6412A7C97E200303BF4 /* returnSkillFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnSkillFunctions.swift; sourceTree = "<group>"; };
+		94F0E6432A7D634C00303BF4 /* returnTraitFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnTraitFunctions.swift; sourceTree = "<group>"; };
+		94F0E6452A7D654600303BF4 /* returnReligionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnReligionFunctions.swift; sourceTree = "<group>"; };
+		94F0E6472A7D657300303BF4 /* returnSpellFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnSpellFunctions.swift; sourceTree = "<group>"; };
+		94F0E6492A7D658A00303BF4 /* returnLanguageFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = returnLanguageFunctions.swift; sourceTree = "<group>"; };
+		94F0E64B2A7D6BD400303BF4 /* LevelUpLevelOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpLevelOneView.swift; sourceTree = "<group>"; };
+		94F0E6512A82FCF600303BF4 /* LevelUpSelectorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSelectorListView.swift; sourceTree = "<group>"; };
+		94F0E6532A82FD0300303BF4 /* LevelUpSelectorSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpSelectorSelectionView.swift; sourceTree = "<group>"; };
+		94FF9E4B2AC100F200E9C58C /* ConditionalSpellDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalSpellDisplay.swift; sourceTree = "<group>"; };
+		94FF9E4D2AC101D200E9C58C /* ConditionalSkillDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalSkillDisplay.swift; sourceTree = "<group>"; };
+		94FF9E4F2AC1026600E9C58C /* ConditionalFeatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalFeatDisplay.swift; sourceTree = "<group>"; };
+		94FF9E512AC1035C00E9C58C /* ConditionalWAADisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalWAADisplay.swift; sourceTree = "<group>"; };
+		94FF9E552AC1050300E9C58C /* ConditionalTemporaryDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalTemporaryDisplay.swift; sourceTree = "<group>"; };
+		94FF9E572AC378DA00E9C58C /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		94FF9E5F2AC7D30700E9C58C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B3FA6974C22FB7EF2B0C918F /* Pods_Path2e.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Path2e.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2E556107FDC4808BEFE0CF /* Pods-Path2e.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Path2e.release.xcconfig"; path = "Target Support Files/Pods-Path2e/Pods-Path2e.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		941C9F3B2A660A9300AB4B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA0B54DC7F2B9B87ADAA018 /* Pods_Path2e.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65E474FF806BB5CD2EE95025 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D94A78BDB4C6ABC53A706C /* Pods-Path2e.debug.xcconfig */,
+				FB2E556107FDC4808BEFE0CF /* Pods-Path2e.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9415487A2B099B3F00D54729 /* AlchemicalFormulaView */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7612A71B9740020B2F7 /* FormulaSelectionView.swift */,
+				94BDBA4C2A6DD07500CEF379 /* ChooseFieldFormulaListDisplay.swift */,
+				94BDBA4E2A6DDBC900CEF379 /* ChooseAlchemicalFormulaListDisplay.swift */,
+				94C908542ADE5DA300EB5A01 /* ChooseAlchemicalFormulaCategoryListDisplay.swift */,
+			);
+			path = AlchemicalFormulaView;
+			sourceTree = "<group>";
+		};
+		9415487D2B0A981C00D54729 /* AbilityBoostSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9415487E2B0A983A00D54729 /* AbilityBoostSelectionView.swift */,
+				941548842B0AB20800D54729 /* SingleAbilityDisplay.swift */,
+				941548802B0A989B00D54729 /* AbilityScoreClasses.swift */,
+			);
+			path = AbilityBoostSelectionView;
+			sourceTree = "<group>";
+		};
+		941548862B0C4ED800D54729 /* CharacterSheet */ = {
+			isa = PBXGroup;
+			children = (
+				941548872B0C6DC600D54729 /* CharacterSheetTabView.swift */,
+				941548892B0D353600D54729 /* StatsTab */,
+				9471EE3C2B0D8E2D002862E5 /* ProficiencyBoxDisplay.swift */,
+				9471EE622B11D22C002862E5 /* KeyPadDisplay.swift */,
+			);
+			path = CharacterSheet;
+			sourceTree = "<group>";
+		};
+		941548892B0D353600D54729 /* StatsTab */ = {
+			isa = PBXGroup;
+			children = (
+				9415488A2B0D354400D54729 /* StatTabView.swift */,
+				9471EE422B0DE905002862E5 /* StatTabHeader */,
+				9471EE272B0D43D8002862E5 /* StatTabAbilities */,
+				9471EE352B0D8AA9002862E5 /* StatTabSavingThrows */,
+				9471EE582B0E9B5C002862E5 /* StatTabHealth */,
+				9471EE6C2B1416DC002862E5 /* StatTabCombatStats */,
+				94D8507A2B166C8F00BEBC15 /* StatTabSpeed */,
+				94D850852B16C7E500BEBC15 /* StatTabLanguages */,
+				94D8508A2B17161300BEBC15 /* StatTabArmorProficiency */,
+				94D8508B2B17161E00BEBC15 /* StatTabWeaponProficiency */,
+				94D850992B1852F900BEBC15 /* StatTabResistances */,
+				94D850862B1715D000BEBC15 /* StatTabShield */,
+				94D850892B1715F100BEBC15 /* StatTabAmmo */,
+				94D8508D2B17163200BEBC15 /* StatTabTracker */,
+				94D8508C2B17162700BEBC15 /* StatTabAttack */,
+				94D850882B1715E200BEBC15 /* StatTabRage */,
+				94D850872B1715DA00BEBC15 /* StatTabCondition */,
+			);
+			path = StatsTab;
+			sourceTree = "<group>";
+		};
+		94162FE12AE19CD5006141B6 /* LevelUpConditionalChangeView */ = {
+			isa = PBXGroup;
+			children = (
+				94162FE22AE19D07006141B6 /* LevelUpConditionalChangeView.swift */,
+				94162FF32AEC4DBD006141B6 /* LevelUpConditionalSelectionView.swift */,
+			);
+			path = LevelUpConditionalChangeView;
+			sourceTree = "<group>";
+		};
+		941C9F352A660A9300AB4B1F = {
+			isa = PBXGroup;
+			children = (
+				94C299BF2A6CBC800021A000 /* data.realm */,
+				941C9F402A660A9300AB4B1F /* Path2e */,
+				941C9F3F2A660A9300AB4B1F /* Products */,
+				65E474FF806BB5CD2EE95025 /* Pods */,
+				D2CECD1005E6FE7850D47E97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		941C9F3F2A660A9300AB4B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F3E2A660A9300AB4B1F /* Path2e.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		941C9F402A660A9300AB4B1F /* Path2e */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F412A660A9300AB4B1F /* Path2eApp.swift */,
+				941C9F432A660A9300AB4B1F /* ContentView.swift */,
+				9430C7F62A95527E00A2794D /* CharacterListView.swift */,
+				941C9F6D2A676D3E00AB4B1F /* AppState.swift */,
+				941C9F6B2A676BF800AB4B1F /* Route.swift */,
+				9434DDA82A79C4C200F3073D /* LazyView.swift */,
+				94BDBA572A6E166F00CEF379 /* Alert.swift */,
+				94FF9E572AC378DA00E9C58C /* Preferences.swift */,
+				946ADBA72A70A64F00F8F8DB /* checkChosenFeatureForAlerts.swift */,
+				94C299A52A6C472E0021A000 /* Models */,
+				94B13C772A75999700EEA61C /* PageViews */,
+				9434DDAC2A79CA9100F3073D /* LevelUpView */,
+				94B13C782A759FD300EEA61C /* NewCharacterCreation */,
+				941548862B0C4ED800D54729 /* CharacterSheet */,
+				941C9F592A670EBB00AB4B1F /* Character */,
+				941C9F5C2A671AC200AB4B1F /* Brain.swift */,
+				941C9F5E2A671AD600AB4B1F /* StoredDataClasses */,
+				941C9F452A660A9500AB4B1F /* Assets.xcassets */,
+				941C9F472A660A9500AB4B1F /* Preview Content */,
+			);
+			path = Path2e;
+			sourceTree = "<group>";
+		};
+		941C9F472A660A9500AB4B1F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F482A660A9500AB4B1F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		941C9F592A670EBB00AB4B1F /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F4F2A6655AB00AB4B1F /* Character.swift */,
+				94F0E63E2A7C7F2300303BF4 /* CharacterReturnFunctions */,
+				94B13C812A75B8A400EEA61C /* CharacterClasses */,
+				946ADBA92A70B0AC00F8F8DB /* Spellcasting.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		941C9F5E2A671AD600AB4B1F /* StoredDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F552A66F96700AB4B1F /* SharedClasses.swift */,
+				941C9F572A66F97500AB4B1F /* DataClasses.swift */,
+			);
+			path = StoredDataClasses;
+			sourceTree = "<group>";
+		};
+		941C9F5F2A6722BB00AB4B1F /* DisplayEffect */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F5A2A67112D00AB4B1F /* DisplayEffects.swift */,
+				941C9F602A67230400AB4B1F /* ModificationDisplay.swift */,
+				941C9F622A672D3700AB4B1F /* TemporaryModificationDisplay.swift */,
+				941C9F642A673CCE00AB4B1F /* TemporaryEffectDisplay.swift */,
+				9430C7FA2A98469700A2794D /* ConditionalDisplay */,
+				94BDBA522A6DE1AD00CEF379 /* FeatureDisplay */,
+				94BDBA472A6CFBE300CEF379 /* WeaponAndArmorDisplay */,
+				94C299B82A6CA6970021A000 /* SpellDisplay */,
+				941C9F7C2A69D93000AB4B1F /* SkillDisplay */,
+				941C9F732A68616C00AB4B1F /* FeatDisplay */,
+			);
+			path = DisplayEffect;
+			sourceTree = "<group>";
+		};
+		941C9F732A68616C00AB4B1F /* FeatDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F6F2A67B56700AB4B1F /* FeatDisplay.swift */,
+			);
+			path = FeatDisplay;
+			sourceTree = "<group>";
+		};
+		941C9F7C2A69D93000AB4B1F /* SkillDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F7A2A69D22200AB4B1F /* SkillDisplay.swift */,
+			);
+			path = SkillDisplay;
+			sourceTree = "<group>";
+		};
+		9430C7FA2A98469700A2794D /* ConditionalDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				9430C7F82A98467700A2794D /* ConditionalDisplay.swift */,
+				94FF9E4D2AC101D200E9C58C /* ConditionalSkillDisplay.swift */,
+				94FF9E512AC1035C00E9C58C /* ConditionalWAADisplay.swift */,
+				94162FDD2ADF8557006141B6 /* ConditionalFeatureDisplay.swift */,
+				94FF9E4F2AC1026600E9C58C /* ConditionalFeatDisplay.swift */,
+				94FF9E552AC1050300E9C58C /* ConditionalTemporaryDisplay.swift */,
+				94FF9E4B2AC100F200E9C58C /* ConditionalSpellDisplay.swift */,
+				94162FDF2AE056C2006141B6 /* ConditionalOtherDisplay.swift */,
+			);
+			path = ConditionalDisplay;
+			sourceTree = "<group>";
+		};
+		9434DDA22A79967800F3073D /* BackgroundSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9434DDA02A79966F00F3073D /* BackgroundSelectionListDisplay.swift */,
+				9434DD9E2A79964A00F3073D /* NewCharacterBackgroundSelectionView.swift */,
+			);
+			path = BackgroundSelection;
+			sourceTree = "<group>";
+		};
+		9434DDA72A79B89E00F3073D /* AlignmentSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9434DDA52A79B04C00F3073D /* AlignmentSelectionView.swift */,
+			);
+			path = AlignmentSelection;
+			sourceTree = "<group>";
+		};
+		9434DDAC2A79CA9100F3073D /* LevelUpView */ = {
+			isa = PBXGroup;
+			children = (
+				94F0E6342A7AF76F00303BF4 /* LevelUpAbilitiesAndFeatsView */,
+				94F0E63B2A7C588200303BF4 /* LevelUpLevelOneView */,
+				94F0E64D2A7EF3CF00303BF4 /* LevelUpSpellSelectionView */,
+				9438953C2A89CA7E00FF6329 /* LevelUpSignatureSpellView */,
+				943895412A92EDBA00FF6329 /* LevelUpFormulaSelectionView */,
+				94162FE12AE19CD5006141B6 /* LevelUpConditionalChangeView */,
+			);
+			path = LevelUpView;
+			sourceTree = "<group>";
+		};
+		9438953C2A89CA7E00FF6329 /* LevelUpSignatureSpellView */ = {
+			isa = PBXGroup;
+			children = (
+				943895362A86DBCF00FF6329 /* LevelUpSignatureSpellView.swift */,
+				943895382A89CA6A00FF6329 /* LevelUpSignatureSpellListView.swift */,
+				9438953A2A89CA7700FF6329 /* LevelUpSignatureSpellSelectionView.swift */,
+			);
+			path = LevelUpSignatureSpellView;
+			sourceTree = "<group>";
+		};
+		943895412A92EDBA00FF6329 /* LevelUpFormulaSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9434DDB32A79DBCF00F3073D /* LevelUpFormulaView.swift */,
+				94C908522ADCF8E600EB5A01 /* LevelUpFormulaCategoryListView.swift */,
+				943895442A930B6000FF6329 /* LevelUpFormulaListView.swift */,
+				943895462A93124D00FF6329 /* LevelUpFormulaSelectionView.swift */,
+			);
+			path = LevelUpFormulaSelectionView;
+			sourceTree = "<group>";
+		};
+		94503CFE2B094CFF001A6AF3 /* SpellDisplays */ = {
+			isa = PBXGroup;
+			children = (
+				94C299A92A6CA0C90021A000 /* SpellBasicDisplays.swift */,
+				94C299AE2A6CA32E0021A000 /* SpellTraitDisplay.swift */,
+				94C299B02A6CA3BF0021A000 /* SpellCastingDisplay.swift */,
+				94C299B22A6CA4CC0021A000 /* SpellHeightenedDisplay.swift */,
+			);
+			path = SpellDisplays;
+			sourceTree = "<group>";
+		};
+		94503CFF2B094D0D001A6AF3 /* FeatDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				946ADBAE2A71A51400F8F8DB /* FeatBasicDisplay.swift */,
+				946ADBB02A71A55200F8F8DB /* FeatActionDisplay.swift */,
+				946ADBB22A71A57500F8F8DB /* FeatDescriptionDisplay.swift */,
+			);
+			path = FeatDisplay;
+			sourceTree = "<group>";
+		};
+		946ADBAD2A71A50200F8F8DB /* FeatView */ = {
+			isa = PBXGroup;
+			children = (
+				946ADBAB2A7199D000F8F8DB /* FeatView.swift */,
+				94A6C7632A720A990020B2F7 /* FeatSelectionView.swift */,
+				941C9F762A686E6E00AB4B1F /* ChooseFeatListView.swift */,
+				941C9F742A68619E00AB4B1F /* ChooseFeatFromListView.swift */,
+				94503CFF2B094D0D001A6AF3 /* FeatDisplay */,
+			);
+			path = FeatView;
+			sourceTree = "<group>";
+		};
+		9471EE272B0D43D8002862E5 /* StatTabAbilities */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE282B0D43F6002862E5 /* StatTabAbilityScoresDisplay.swift */,
+				9471EE2A2B0D4483002862E5 /* StatTabSingleAbilityScoreDisplay.swift */,
+				9471EE2C2B0D4B55002862E5 /* AbilityScoreBreakdownView.swift */,
+			);
+			path = StatTabAbilities;
+			sourceTree = "<group>";
+		};
+		9471EE2E2B0D6848002862E5 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				94FF9E5F2AC7D30700E9C58C /* RealmManager.swift */,
+				9471EE2F2B0D685F002862E5 /* RealmManagerCharacterSheetFunctions.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		9471EE352B0D8AA9002862E5 /* StatTabSavingThrows */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE362B0D8AC4002862E5 /* StatTabSavingThrowsDisplay.swift */,
+				9471EE382B0D8B6B002862E5 /* StatTabSingleSavingThrowDisplay.swift */,
+				9471EE3E2B0DBFBC002862E5 /* SavingThrowBreakdownView.swift */,
+			);
+			path = StatTabSavingThrows;
+			sourceTree = "<group>";
+		};
+		9471EE422B0DE905002862E5 /* StatTabHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE402B0DE8ED002862E5 /* StatTabHeaderDisplay.swift */,
+				9471EE452B0E93B7002862E5 /* StatTabHeaderName */,
+				9471EE462B0E95A0002862E5 /* StatTabHeaderAlignment */,
+				9471EE4E2B0E984C002862E5 /* StatTabHeaderLevel */,
+				9471EE4C2B0E9837002862E5 /* StatTabHeaderAncestry */,
+				9471EE4D2B0E9842002862E5 /* StatTabHeaderHeritage */,
+				9471EE4B2B0E982A002862E5 /* StatTabHeaderClass */,
+			);
+			path = StatTabHeader;
+			sourceTree = "<group>";
+		};
+		9471EE452B0E93B7002862E5 /* StatTabHeaderName */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE432B0E8AE6002862E5 /* StatTabEditNameDisplay.swift */,
+			);
+			path = StatTabHeaderName;
+			sourceTree = "<group>";
+		};
+		9471EE462B0E95A0002862E5 /* StatTabHeaderAlignment */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE472B0E95C2002862E5 /* StatTabHeaderAlignment.swift */,
+				9471EE492B0E95E8002862E5 /* StatTabHeaderChangeAlignment.swift */,
+			);
+			path = StatTabHeaderAlignment;
+			sourceTree = "<group>";
+		};
+		9471EE4B2B0E982A002862E5 /* StatTabHeaderClass */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE552B0E98E8002862E5 /* StatTabHeaderClassDisplay.swift */,
+			);
+			path = StatTabHeaderClass;
+			sourceTree = "<group>";
+		};
+		9471EE4C2B0E9837002862E5 /* StatTabHeaderAncestry */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE532B0E98B7002862E5 /* StatTabHeaderAncestryDisplay.swift */,
+			);
+			path = StatTabHeaderAncestry;
+			sourceTree = "<group>";
+		};
+		9471EE4D2B0E9842002862E5 /* StatTabHeaderHeritage */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE512B0E9897002862E5 /* StatTabHeaderHeritageDisplay.swift */,
+			);
+			path = StatTabHeaderHeritage;
+			sourceTree = "<group>";
+		};
+		9471EE4E2B0E984C002862E5 /* StatTabHeaderLevel */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE572B0E9B39002862E5 /* StatTabXP */,
+				9471EE4F2B0E9866002862E5 /* StatTabeHeaderLevelDisplay.swift */,
+			);
+			path = StatTabHeaderLevel;
+			sourceTree = "<group>";
+		};
+		9471EE572B0E9B39002862E5 /* StatTabXP */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE592B0E9C07002862E5 /* StatTabXPDisplay.swift */,
+				9471EE5D2B0E9F86002862E5 /* StatTabAdjustXPView.swift */,
+				9471EE5B2B0E9D08002862E5 /* WithBackgroundProgressViewStyle.swift */,
+			);
+			path = StatTabXP;
+			sourceTree = "<group>";
+		};
+		9471EE582B0E9B5C002862E5 /* StatTabHealth */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE602B11C8C0002862E5 /* StatTabHealthDisplay.swift */,
+				9471EE642B11D268002862E5 /* StatTabAdjustHealthView.swift */,
+				9471EE6A2B140E95002862E5 /* StatTabDyingView.swift */,
+			);
+			path = StatTabHealth;
+			sourceTree = "<group>";
+		};
+		9471EE6C2B1416DC002862E5 /* StatTabCombatStats */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE6D2B141754002862E5 /* StatTabCombatStatsDisplay.swift */,
+				94D850772B153A1E00BEBC15 /* AC */,
+				9471EE792B142154002862E5 /* Perception */,
+				94D850742B14357300BEBC15 /* ClassDC */,
+			);
+			path = StatTabCombatStats;
+			sourceTree = "<group>";
+		};
+		9471EE792B142154002862E5 /* Perception */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE6F2B14179F002862E5 /* StatTabPerceptionDisplay.swift */,
+				9471EE772B141E98002862E5 /* PerceptionBreakDown.swift */,
+			);
+			path = Perception;
+			sourceTree = "<group>";
+		};
+		94A6C7672A7241F30020B2F7 /* ClassAbilityView */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7652A7240C60020B2F7 /* ClassAbilityView.swift */,
+				94A6C7722A730EDF0020B2F7 /* ClassAbilitySelectionView.swift */,
+				94A6C7702A724B910020B2F7 /* ClassAbilitySelectorListView.swift */,
+				94A6C7682A72420F0020B2F7 /* ClassAbilityBasicDisplay.swift */,
+				94A6C76A2A72427D0020B2F7 /* ClassAbilityDescriptionDisplay.swift */,
+			);
+			path = ClassAbilityView;
+			sourceTree = "<group>";
+		};
+		94A6C77C2A7350F00020B2F7 /* ClassView */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7782A734D6A0020B2F7 /* ClassView.swift */,
+				94A6C77D2A735AB80020B2F7 /* ClassAbilityListDisplay.swift */,
+			);
+			path = ClassView;
+			sourceTree = "<group>";
+		};
+		94A6C7812A7368380020B2F7 /* AncestryView */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C77F2A73682C0020B2F7 /* AncestryView.swift */,
+				94A6C78D2A73786E0020B2F7 /* AncestryBasicDisplay.swift */,
+				94A6C7B42A7450C50020B2F7 /* AncestryDescriptionDisplay.swift */,
+				94A6C7B62A7450CE0020B2F7 /* AncestryAbilityScoreDisplay */,
+				94A6C7B12A744F870020B2F7 /* AncestryLanguageDisplay */,
+				94A6C7AC2A744BD50020B2F7 /* AncestryHeritageDisplay */,
+				94A6C7A72A7447840020B2F7 /* AncestryFeatDisplay */,
+				94A6C79D2A743A8D0020B2F7 /* AncestrySenseDisplay */,
+				94A6C7A02A743F280020B2F7 /* AncestryPhysicalFeature */,
+			);
+			path = AncestryView;
+			sourceTree = "<group>";
+		};
+		94A6C7842A7368490020B2F7 /* HeritageView */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7822A7368460020B2F7 /* HeritageView.swift */,
+			);
+			path = HeritageView;
+			sourceTree = "<group>";
+		};
+		94A6C79D2A743A8D0020B2F7 /* AncestrySenseDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C79B2A743A280020B2F7 /* AncestrySenseDisplay.swift */,
+				94A6C78F2A7378E40020B2F7 /* VisionView.swift */,
+				94A6C7992A7439B70020B2F7 /* AdditionalSense.swift */,
+			);
+			path = AncestrySenseDisplay;
+			sourceTree = "<group>";
+		};
+		94A6C7A02A743F280020B2F7 /* AncestryPhysicalFeature */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C79E2A743D740020B2F7 /* AncestryPhysicalFeatureDisplay.swift */,
+				94A6C7A32A7440190020B2F7 /* PhysicalFeatureSelectionDisplay.swift */,
+			);
+			path = AncestryPhysicalFeature;
+			sourceTree = "<group>";
+		};
+		94A6C7A72A7447840020B2F7 /* AncestryFeatDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7A52A7447540020B2F7 /* AncestryFeatDisplay.swift */,
+				94A6C7A82A7447B80020B2F7 /* AncestryFeatListDisplay.swift */,
+			);
+			path = AncestryFeatDisplay;
+			sourceTree = "<group>";
+		};
+		94A6C7AC2A744BD50020B2F7 /* AncestryHeritageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7AA2A744BD10020B2F7 /* AncestryHeritageDisplay.swift */,
+				94A6C7AD2A744CE10020B2F7 /* AncestryHeritageListDisplay.swift */,
+			);
+			path = AncestryHeritageDisplay;
+			sourceTree = "<group>";
+		};
+		94A6C7B12A744F870020B2F7 /* AncestryLanguageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7AF2A744EFF0020B2F7 /* AncestryLanguageDisplay.swift */,
+				94A6C7B22A744F990020B2F7 /* LanguageView.swift */,
+			);
+			path = AncestryLanguageDisplay;
+			sourceTree = "<group>";
+		};
+		94A6C7B62A7450CE0020B2F7 /* AncestryAbilityScoreDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94A6C7932A737CFA0020B2F7 /* AncestryAbilityScoreDisplay.swift */,
+			);
+			path = AncestryAbilityScoreDisplay;
+			sourceTree = "<group>";
+		};
+		94B13C752A7595C000EEA61C /* VersatileHeritageView */ = {
+			isa = PBXGroup;
+			children = (
+				94B13C712A7594E300EEA61C /* VersatileHeritageView.swift */,
+			);
+			path = VersatileHeritageView;
+			sourceTree = "<group>";
+		};
+		94B13C772A75999700EEA61C /* PageViews */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F5F2A6722BB00AB4B1F /* DisplayEffect */,
+				94A6C7812A7368380020B2F7 /* AncestryView */,
+				94A6C77C2A7350F00020B2F7 /* ClassView */,
+				94A6C7672A7241F30020B2F7 /* ClassAbilityView */,
+				94BDBA5B2A6E2ABD00CEF379 /* ConditionView */,
+				94BDBA5E2A6E2AD400CEF379 /* DeityView */,
+				9415487D2B0A981C00D54729 /* AbilityBoostSelectionView */,
+				94BDBA612A6E2B1600CEF379 /* DomainView */,
+				946ADBAD2A71A50200F8F8DB /* FeatView */,
+				94A6C7842A7368490020B2F7 /* HeritageView */,
+				94BDBA6E2A7051EE00CEF379 /* ItemDisplayView */,
+				9415487A2B099B3F00D54729 /* AlchemicalFormulaView */,
+				94BAB8DF2B0571DA008FE3B3 /* SkillSelectionView */,
+				94C299A82A6CA0BC0021A000 /* SpellView */,
+				94C299AD2A6CA2F10021A000 /* TraitView */,
+				94B13C752A7595C000EEA61C /* VersatileHeritageView */,
+			);
+			path = PageViews;
+			sourceTree = "<group>";
+		};
+		94B13C782A759FD300EEA61C /* NewCharacterCreation */ = {
+			isa = PBXGroup;
+			children = (
+				94B13C792A75AA4900EEA61C /* NewCharacterCreationView.swift */,
+				9434DDA72A79B89E00F3073D /* AlignmentSelection */,
+				9434DDA22A79967800F3073D /* BackgroundSelection */,
+				94B13C992A777DA900EEA61C /* AncestrySelection */,
+				94B13CA82A782DC300EEA61C /* HeritageVersatileHeritageSelection */,
+				94B13C942A777D7000EEA61C /* ClassSelection */,
+			);
+			path = NewCharacterCreation;
+			sourceTree = "<group>";
+		};
+		94B13C812A75B8A400EEA61C /* CharacterClasses */ = {
+			isa = PBXGroup;
+			children = (
+				94B13C922A77736000EEA61C /* CharacterClassExtension.swift */,
+				94B13C9E2A782A1E00EEA61C /* CharacterHeritageExtension.swift */,
+				94B13C9A2A7783DC00EEA61C /* CharacterAncestryExtension.swift */,
+				94B13CA02A782AFB00EEA61C /* CharacterVersatileHeritageExtension.swift */,
+				94B13C822A75E27500EEA61C /* CharacterFeatExtension.swift */,
+				94B13C9C2A778AE700EEA61C /* CharacterPhysicalFeatureExtension.swift */,
+				9434DDA32A799F0F00F3073D /* CharacterBackgroundExtension.swift */,
+				9434DDBB2A79E54B00F3073D /* CharacterClassAbilityExtension.swift */,
+				94B13C7F2A75B89E00EEA61C /* CharacterEffectExtension.swift */,
+				94DEEECB2AD0E38B005406AC /* CharacterSpellExtension.swift */,
+				94C908502ADA34B000EB5A01 /* CharacterFormulaExtension.swift */,
+				9471EE332B0D7BFF002862E5 /* CharacterConditionExtension.swift */,
+				94162FE42AE1C5B3006141B6 /* CharacterConditionalExtension.swift */,
+				94B13C842A76D5FF00EEA61C /* GiveCharacterItem.swift */,
+			);
+			path = CharacterClasses;
+			sourceTree = "<group>";
+		};
+		94B13C942A777D7000EEA61C /* ClassSelection */ = {
+			isa = PBXGroup;
+			children = (
+				94B13C7B2A75AB2A00EEA61C /* ClassSelectionListDisplay.swift */,
+				94B13C7D2A75AFB100EEA61C /* NewCharacterClassSelectionView.swift */,
+			);
+			path = ClassSelection;
+			sourceTree = "<group>";
+		};
+		94B13C992A777DA900EEA61C /* AncestrySelection */ = {
+			isa = PBXGroup;
+			children = (
+				94B13C952A777D8C00EEA61C /* AncestrySelectionListDisplay.swift */,
+				94B13C972A777DA400EEA61C /* NewCharacterAncestrySelectionView.swift */,
+			);
+			path = AncestrySelection;
+			sourceTree = "<group>";
+		};
+		94B13CA82A782DC300EEA61C /* HeritageVersatileHeritageSelection */ = {
+			isa = PBXGroup;
+			children = (
+				94B13CA22A782D7E00EEA61C /* HeritageSelectionListDisplay.swift */,
+				94B13CA42A782DAA00EEA61C /* NewCharacterHeritageSelectionView.swift */,
+				94B13CA62A782DBB00EEA61C /* NewCharacterVersatileHeritageSelectionView.swift */,
+			);
+			path = HeritageVersatileHeritageSelection;
+			sourceTree = "<group>";
+		};
+		94BAB8DF2B0571DA008FE3B3 /* SkillSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				941C9F7D2A69FC1700AB4B1F /* SkillSelectionDisplay.swift */,
+				94C299A12A6AE7BC0021A000 /* SingleSkillDisplay.swift */,
+				941C9F7F2A6A10B400AB4B1F /* ProficiencyBoxView.swift */,
+				94BAB8DD2B055A44008FE3B3 /* SkillClasses.swift */,
+			);
+			path = SkillSelectionView;
+			sourceTree = "<group>";
+		};
+		94BDBA472A6CFBE300CEF379 /* WeaponAndArmorDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA482A6CFBF800CEF379 /* WeaponAndArmorDisplay.swift */,
+				94BDBA4A2A6DA63500CEF379 /* ChooseRageWeaponListDisplay.swift */,
+			);
+			path = WeaponAndArmorDisplay;
+			sourceTree = "<group>";
+		};
+		94BDBA522A6DE1AD00CEF379 /* FeatureDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA502A6DE1AA00CEF379 /* FeatureDisplay.swift */,
+				94BDBA622A6E5FFD00CEF379 /* DeityListDisplay.swift */,
+				94BDBA642A6E600900CEF379 /* DomainListDisplay.swift */,
+				94BDBA662A6E601C00CEF379 /* AdvancedDomainListDisplay.swift */,
+				94A6C7742A7335440020B2F7 /* ClassFeatureSelectorListDisplay.swift */,
+				94A6C7762A7335710020B2F7 /* ClassFeatureSelectionDisplay.swift */,
+			);
+			path = FeatureDisplay;
+			sourceTree = "<group>";
+		};
+		94BDBA5B2A6E2ABD00CEF379 /* ConditionView */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA592A6E274100CEF379 /* ConditionView.swift */,
+			);
+			path = ConditionView;
+			sourceTree = "<group>";
+		};
+		94BDBA5E2A6E2AD400CEF379 /* DeityView */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA5C2A6E2ACF00CEF379 /* DeityView.swift */,
+				94BDBA682A6EF20D00CEF379 /* DeitySelectionView.swift */,
+			);
+			path = DeityView;
+			sourceTree = "<group>";
+		};
+		94BDBA612A6E2B1600CEF379 /* DomainView */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA5F2A6E2AE800CEF379 /* DomainView.swift */,
+				94BDBA6A2A6F11CE00CEF379 /* DomainSelectionDisplay.swift */,
+			);
+			path = DomainView;
+			sourceTree = "<group>";
+		};
+		94BDBA6E2A7051EE00CEF379 /* ItemDisplayView */ = {
+			isa = PBXGroup;
+			children = (
+				94BDBA6C2A7051E900CEF379 /* ItemView.swift */,
+				94BDBA822A70937600CEF379 /* ItemSelectionView.swift */,
+				94BDBA6F2A70549000CEF379 /* ItemBasicDisplay.swift */,
+				94BDBA722A7054DF00CEF379 /* ItemTraitDisplay.swift */,
+				94BDBA742A7056DA00CEF379 /* ItemWeaponDisplay.swift */,
+				94BDBA762A70572F00CEF379 /* ItemArmorDisplay.swift */,
+				94BDBA782A70574600CEF379 /* ItemShieldDisplay.swift */,
+				94BDBA7A2A70577000CEF379 /* ItemStorageDisplay.swift */,
+				94BDBA7C2A70578300CEF379 /* ItemRuneDisplay.swift */,
+				94BDBA7E2A7057A800CEF379 /* ItemDescriptionDisplay.swift */,
+			);
+			path = ItemDisplayView;
+			sourceTree = "<group>";
+		};
+		94C299A52A6C472E0021A000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE2E2B0D6848002862E5 /* RealmManager */,
+				941C9F692A676A0700AB4B1F /* LoadDataModel.swift */,
+				9434DD9C2A7985E700F3073D /* NewCharacterModel.swift */,
+				9434DDB92A79E0E400F3073D /* LevelUpCharacterModel.swift */,
+				94503CFC2B094994001A6AF3 /* ChosenSpellModel.swift */,
+				9415487B2B099C0100D54729 /* ChosenFormulaModel.swift */,
+				943895342A85C1C200FF6329 /* ChosenSpellsModel.swift */,
+				941548822B0AB0F000D54729 /* ChosenAbilityBoostModel.swift */,
+				94C299A32A6C46D90021A000 /* ChosenFeaturesModel.swift */,
+				94BAB8E12B058059008FE3B3 /* ChosenConditionalModel.swift */,
+				94DEEEC92ACFB5D5005406AC /* ChosenSkill.swift */,
+				946ADBB42A71A5F400F8F8DB /* ChosenFeatModel.swift */,
+				94A6C76E2A7244E70020B2F7 /* ChosenClassAbilityModel.swift */,
+				94A6C77A2A7350800020B2F7 /* ChosenClassModel.swift */,
+				94A6C78B2A7375B40020B2F7 /* ChosenHeritageModel.swift */,
+				94A6C7912A737C870020B2F7 /* ChosenAncestryModel.swift */,
+				94A6C7A12A743F7A0020B2F7 /* ChosenPhysicalFeatureModel.swift */,
+				94A6C7BA2A74545D0020B2F7 /* ChosenBackgroundModel.swift */,
+				94B13C732A75957E00EEA61C /* ChosenVersatileHeritageModel.swift */,
+				94BDBA802A70900600CEF379 /* ChosenItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94C299A82A6CA0BC0021A000 /* SpellView */ = {
+			isa = PBXGroup;
+			children = (
+				94C299A62A6C9EC50021A000 /* SpellView.swift */,
+				94C299B42A6CA6230021A000 /* SpellSelectionView.swift */,
+				94C299C12A6CCCA60021A000 /* ChooseSpellListView.swift */,
+				941548782B0972C600D54729 /* ChooseSpellFromListView.swift */,
+				94503D022B094D9A001A6AF3 /* ChosenSpellButtonDisplay.swift */,
+				941548762B0962AA00D54729 /* SpellListButtonDisplay.swift */,
+				94503CFE2B094CFF001A6AF3 /* SpellDisplays */,
+			);
+			path = SpellView;
+			sourceTree = "<group>";
+		};
+		94C299AD2A6CA2F10021A000 /* TraitView */ = {
+			isa = PBXGroup;
+			children = (
+				94C299AB2A6CA2D70021A000 /* TraitView.swift */,
+			);
+			path = TraitView;
+			sourceTree = "<group>";
+		};
+		94C299B82A6CA6970021A000 /* SpellDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				94C299B62A6CA6930021A000 /* SpellDisplay.swift */,
+			);
+			path = SpellDisplay;
+			sourceTree = "<group>";
+		};
+		94D850742B14357300BEBC15 /* ClassDC */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE732B1417C1002862E5 /* StatTabClassDCDisplay.swift */,
+				94D850722B14356500BEBC15 /* ClassDCBreakdown.swift */,
+			);
+			path = ClassDC;
+			sourceTree = "<group>";
+		};
+		94D850772B153A1E00BEBC15 /* AC */ = {
+			isa = PBXGroup;
+			children = (
+				9471EE712B1417B4002862E5 /* StatTabACDisplay.swift */,
+				94D850782B153A2B00BEBC15 /* ACBreakdown.swift */,
+			);
+			path = AC;
+			sourceTree = "<group>";
+		};
+		94D8507A2B166C8F00BEBC15 /* StatTabSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				94D8507B2B166CB300BEBC15 /* StatTabSpeedDisplay.swift */,
+				94D8507F2B16835500BEBC15 /* StatTabSingleSpeedDisplay.swift */,
+				94D850812B16836500BEBC15 /* SpeedBreakdownView.swift */,
+			);
+			path = StatTabSpeed;
+			sourceTree = "<group>";
+		};
+		94D850852B16C7E500BEBC15 /* StatTabLanguages */ = {
+			isa = PBXGroup;
+			children = (
+				94D850832B16C7DE00BEBC15 /* StatTabLanguagesDisplay.swift */,
+			);
+			path = StatTabLanguages;
+			sourceTree = "<group>";
+		};
+		94D850862B1715D000BEBC15 /* StatTabShield */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabShield;
+			sourceTree = "<group>";
+		};
+		94D850872B1715DA00BEBC15 /* StatTabCondition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabCondition;
+			sourceTree = "<group>";
+		};
+		94D850882B1715E200BEBC15 /* StatTabRage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabRage;
+			sourceTree = "<group>";
+		};
+		94D850892B1715F100BEBC15 /* StatTabAmmo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabAmmo;
+			sourceTree = "<group>";
+		};
+		94D8508A2B17161300BEBC15 /* StatTabArmorProficiency */ = {
+			isa = PBXGroup;
+			children = (
+				94D8508E2B171BC800BEBC15 /* StatTabArmorProficiencyDisplay.swift */,
+				94D850922B171CAA00BEBC15 /* StatTabSingleArmorProficiencyDisplay.swift */,
+			);
+			path = StatTabArmorProficiency;
+			sourceTree = "<group>";
+		};
+		94D8508B2B17161E00BEBC15 /* StatTabWeaponProficiency */ = {
+			isa = PBXGroup;
+			children = (
+				94D850902B171C2A00BEBC15 /* StatTabWeaponProficiencyDisplay.swift */,
+				94D850942B18471F00BEBC15 /* StatTabSingleWeaponProficiencyDisplay.swift */,
+			);
+			path = StatTabWeaponProficiency;
+			sourceTree = "<group>";
+		};
+		94D8508C2B17162700BEBC15 /* StatTabAttack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabAttack;
+			sourceTree = "<group>";
+		};
+		94D8508D2B17163200BEBC15 /* StatTabTracker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatTabTracker;
+			sourceTree = "<group>";
+		};
+		94D850992B1852F900BEBC15 /* StatTabResistances */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = StatTabResistances;
+			path = StatTabWeaponProficiency;
+			sourceTree = "<group>";
+		};
+		94F0E6342A7AF76F00303BF4 /* LevelUpAbilitiesAndFeatsView */ = {
+			isa = PBXGroup;
+			children = (
+				9434DDAD2A79DAC500F3073D /* LevelUpAbilitiesAndFeatsView.swift */,
+				9434DDBD2A79EF7800F3073D /* LevelUpClassAbilitySelectionView.swift */,
+				94F0E6512A82FCF600303BF4 /* LevelUpSelectorListView.swift */,
+				94F0E6532A82FD0300303BF4 /* LevelUpSelectorSelectionView.swift */,
+				94F0E6352A7AF79600303BF4 /* LevelUpAncestryFeatListView.swift */,
+				94F0E6372A7AF7A500303BF4 /* LevelUpAncestryFeatSelectionView.swift */,
+			);
+			path = LevelUpAbilitiesAndFeatsView;
+			sourceTree = "<group>";
+		};
+		94F0E63B2A7C588200303BF4 /* LevelUpLevelOneView */ = {
+			isa = PBXGroup;
+			children = (
+				94F0E64B2A7D6BD400303BF4 /* LevelUpLevelOneView.swift */,
+			);
+			path = LevelUpLevelOneView;
+			sourceTree = "<group>";
+		};
+		94F0E63E2A7C7F2300303BF4 /* CharacterReturnFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				94F0E63C2A7C7F1E00303BF4 /* returnAbilityScoreFunctions.swift */,
+				9471EE3A2B0D8C4D002862E5 /* returnSavingThrowFunctions.swift */,
+				94D8507D2B166DB900BEBC15 /* returnSpeedFunctions.swift */,
+				94F0E6412A7C97E200303BF4 /* returnSkillFunctions.swift */,
+				94F0E6432A7D634C00303BF4 /* returnTraitFunctions.swift */,
+				9471EE662B1275F2002862E5 /* returnHealthFunctions.swift */,
+				94F0E6452A7D654600303BF4 /* returnReligionFunctions.swift */,
+				94F0E6472A7D657300303BF4 /* returnSpellFunctions.swift */,
+				943895422A92EE9E00FF6329 /* returnFormulaFunctions.swift */,
+				94162FED2AE9CAB4006141B6 /* returnAttackFunctions.swift */,
+				94D850972B184DBB00BEBC15 /* returnWeaponFunctions.swift */,
+				94162FF12AE9CDB6006141B6 /* returnRageOverdriveFunctions.swift */,
+				94162FEF2AE9CABD006141B6 /* returnArmorFunctions.swift */,
+				9471EE752B14180F002862E5 /* returnPerceptionFunctions.swift */,
+				94D850702B14311500BEBC15 /* returnClassDCFunctions.swift */,
+				94F0E6492A7D658A00303BF4 /* returnLanguageFunctions.swift */,
+				94DEEEC72ACF8F58005406AC /* returnLevelUpFunctions.swift */,
+				94F0E63F2A7C934000303BF4 /* returnOtherFunctions.swift */,
+				94C9084E2AD8B1A400EB5A01 /* returnEffectFunctions.swift */,
+				94162FE92AE216B4006141B6 /* returnConditionalFunctions.swift */,
+				9471EE312B0D7BC5002862E5 /* returnConditionFunctions.swift */,
+				94162FE72AE2169A006141B6 /* returnCharacterObjectFunctions.swift */,
+			);
+			path = CharacterReturnFunctions;
+			sourceTree = "<group>";
+		};
+		94F0E64D2A7EF3CF00303BF4 /* LevelUpSpellSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9434DDB12A79DBC100F3073D /* LevelUpSpellView.swift */,
+				943895302A858FD000FF6329 /* LevelUpSpellListView.swift */,
+				94C9084C2AD3BFB400EB5A01 /* LevelUpPreparedListListView.swift */,
+				943895322A85902200FF6329 /* LevelUpSpellSelectionView.swift */,
+			);
+			path = LevelUpSpellSelectionView;
+			sourceTree = "<group>";
+		};
+		D2CECD1005E6FE7850D47E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA6974C22FB7EF2B0C918F /* Pods_Path2e.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		941C9F3D2A660A9300AB4B1F /* Path2e */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941C9F4C2A660A9500AB4B1F /* Build configuration list for PBXNativeTarget "Path2e" */;
+			buildPhases = (
+				85B6448C1B777AEBC8C496A7 /* [CP] Check Pods Manifest.lock */,
+				941C9F3A2A660A9300AB4B1F /* Sources */,
+				941C9F3B2A660A9300AB4B1F /* Frameworks */,
+				941C9F3C2A660A9300AB4B1F /* Resources */,
+				71F7782250A158193A7BC8BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Path2e;
+			productName = Path2e;
+			productReference = 941C9F3E2A660A9300AB4B1F /* Path2e.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		941C9F362A660A9300AB4B1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					941C9F3D2A660A9300AB4B1F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 941C9F392A660A9300AB4B1F /* Build configuration list for PBXProject "Path2e" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 941C9F352A660A9300AB4B1F;
+			productRefGroup = 941C9F3F2A660A9300AB4B1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				941C9F3D2A660A9300AB4B1F /* Path2e */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		941C9F3C2A660A9300AB4B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C299C02A6CBC880021A000 /* data.realm in Resources */,
+				941C9F492A660A9500AB4B1F /* Preview Assets.xcassets in Resources */,
+				941C9F462A660A9500AB4B1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71F7782250A158193A7BC8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Path2e/Pods-Path2e-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Path2e/Pods-Path2e-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Path2e/Pods-Path2e-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B6448C1B777AEBC8C496A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Path2e-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		941C9F3A2A660A9300AB4B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A6C7AE2A744CE10020B2F7 /* AncestryHeritageListDisplay.swift in Sources */,
+				94A6C7B52A7450C50020B2F7 /* AncestryDescriptionDisplay.swift in Sources */,
+				9434DD9D2A7985E700F3073D /* NewCharacterModel.swift in Sources */,
+				94C299AA2A6CA0C90021A000 /* SpellBasicDisplays.swift in Sources */,
+				9471EE392B0D8B6B002862E5 /* StatTabSingleSavingThrowDisplay.swift in Sources */,
+				94BDBA732A7054DF00CEF379 /* ItemTraitDisplay.swift in Sources */,
+				94BDBA512A6DE1AA00CEF379 /* FeatureDisplay.swift in Sources */,
+				941C9F6A2A676A0700AB4B1F /* LoadDataModel.swift in Sources */,
+				9471EE302B0D685F002862E5 /* RealmManagerCharacterSheetFunctions.swift in Sources */,
+				9415487C2B099C0100D54729 /* ChosenFormulaModel.swift in Sources */,
+				9471EE2B2B0D4483002862E5 /* StatTabSingleAbilityScoreDisplay.swift in Sources */,
+				94BDBA812A70900600CEF379 /* ChosenItemModel.swift in Sources */,
+				9471EE3F2B0DBFBC002862E5 /* SavingThrowBreakdownView.swift in Sources */,
+				946ADBA82A70A64F00F8F8DB /* checkChosenFeatureForAlerts.swift in Sources */,
+				94FF9E4C2AC100F200E9C58C /* ConditionalSpellDisplay.swift in Sources */,
+				94BAB8DE2B055A44008FE3B3 /* SkillClasses.swift in Sources */,
+				94162FF22AE9CDB6006141B6 /* returnRageOverdriveFunctions.swift in Sources */,
+				94A6C7712A724B910020B2F7 /* ClassAbilitySelectorListView.swift in Sources */,
+				94A6C7902A7378E40020B2F7 /* VisionView.swift in Sources */,
+				9434DDB42A79DBCF00F3073D /* LevelUpFormulaView.swift in Sources */,
+				941C9F702A67B56700AB4B1F /* FeatDisplay.swift in Sources */,
+				94A6C7752A7335440020B2F7 /* ClassFeatureSelectorListDisplay.swift in Sources */,
+				941C9F5B2A67112D00AB4B1F /* DisplayEffects.swift in Sources */,
+				94A6C77B2A7350800020B2F7 /* ChosenClassModel.swift in Sources */,
+				94DEEECA2ACFB5D5005406AC /* ChosenSkill.swift in Sources */,
+				94F0E63D2A7C7F1E00303BF4 /* returnAbilityScoreFunctions.swift in Sources */,
+				94B13CA12A782AFB00EEA61C /* CharacterVersatileHeritageExtension.swift in Sources */,
+				9471EE652B11D268002862E5 /* StatTabAdjustHealthView.swift in Sources */,
+				94C9084F2AD8B1A400EB5A01 /* returnEffectFunctions.swift in Sources */,
+				94D850792B153A2B00BEBC15 /* ACBreakdown.swift in Sources */,
+				94BDBA772A70572F00CEF379 /* ItemArmorDisplay.swift in Sources */,
+				94BDBA582A6E166F00CEF379 /* Alert.swift in Sources */,
+				9471EE372B0D8AC4002862E5 /* StatTabSavingThrowsDisplay.swift in Sources */,
+				94A6C77E2A735AB80020B2F7 /* ClassAbilityListDisplay.swift in Sources */,
+				9434DDBA2A79E0E400F3073D /* LevelUpCharacterModel.swift in Sources */,
+				9434DDAE2A79DAC500F3073D /* LevelUpAbilitiesAndFeatsView.swift in Sources */,
+				9471EE742B1417C1002862E5 /* StatTabClassDCDisplay.swift in Sources */,
+				943895372A86DBCF00FF6329 /* LevelUpSignatureSpellView.swift in Sources */,
+				94B13C7A2A75AA4900EEA61C /* NewCharacterCreationView.swift in Sources */,
+				94C299AC2A6CA2D70021A000 /* TraitView.swift in Sources */,
+				9430C7F92A98467700A2794D /* ConditionalDisplay.swift in Sources */,
+				9471EE762B14180F002862E5 /* returnPerceptionFunctions.swift in Sources */,
+				94162FF42AEC4DBD006141B6 /* LevelUpConditionalSelectionView.swift in Sources */,
+				94BDBA602A6E2AE800CEF379 /* DomainView.swift in Sources */,
+				94A6C7A92A7447B80020B2F7 /* AncestryFeatListDisplay.swift in Sources */,
+				94C299B52A6CA6230021A000 /* SpellSelectionView.swift in Sources */,
+				943895452A930B6000FF6329 /* LevelUpFormulaListView.swift in Sources */,
+				94B13CA72A782DBB00EEA61C /* NewCharacterVersatileHeritageSelectionView.swift in Sources */,
+				94F0E64C2A7D6BD400303BF4 /* LevelUpLevelOneView.swift in Sources */,
+				941C9F632A672D3700AB4B1F /* TemporaryModificationDisplay.swift in Sources */,
+				943895352A85C1C200FF6329 /* ChosenSpellsModel.swift in Sources */,
+				9471EE5A2B0E9C07002862E5 /* StatTabXPDisplay.swift in Sources */,
+				94B13CA32A782D7E00EEA61C /* HeritageSelectionListDisplay.swift in Sources */,
+				94D850822B16836500BEBC15 /* SpeedBreakdownView.swift in Sources */,
+				941548832B0AB0F000D54729 /* ChosenAbilityBoostModel.swift in Sources */,
+				941548792B0972C700D54729 /* ChooseSpellFromListView.swift in Sources */,
+				94A6C7642A720A990020B2F7 /* FeatSelectionView.swift in Sources */,
+				94F0E6522A82FCF600303BF4 /* LevelUpSelectorListView.swift in Sources */,
+				9471EE5E2B0E9F86002862E5 /* StatTabAdjustXPView.swift in Sources */,
+				941C9F5D2A671AC200AB4B1F /* Brain.swift in Sources */,
+				943895312A858FD000FF6329 /* LevelUpSpellListView.swift in Sources */,
+				94A6C7A42A7440190020B2F7 /* PhysicalFeatureSelectionDisplay.swift in Sources */,
+				94B13C7E2A75AFB100EEA61C /* NewCharacterClassSelectionView.swift in Sources */,
+				94BDBA4D2A6DD07500CEF379 /* ChooseFieldFormulaListDisplay.swift in Sources */,
+				94162FF02AE9CABD006141B6 /* returnArmorFunctions.swift in Sources */,
+				941548812B0A989B00D54729 /* AbilityScoreClasses.swift in Sources */,
+				9434DDA92A79C4C200F3073D /* LazyView.swift in Sources */,
+				941C9F802A6A10B400AB4B1F /* ProficiencyBoxView.swift in Sources */,
+				941548852B0AB20800D54729 /* SingleAbilityDisplay.swift in Sources */,
+				94B13C9D2A778AE700EEA61C /* CharacterPhysicalFeatureExtension.swift in Sources */,
+				943895332A85902200FF6329 /* LevelUpSpellSelectionView.swift in Sources */,
+				943895392A89CA6A00FF6329 /* LevelUpSignatureSpellListView.swift in Sources */,
+				94D850842B16C7DE00BEBC15 /* StatTabLanguagesDisplay.swift in Sources */,
+				94D8507C2B166CB300BEBC15 /* StatTabSpeedDisplay.swift in Sources */,
+				94162FEE2AE9CAB4006141B6 /* returnAttackFunctions.swift in Sources */,
+				946ADBB52A71A5F400F8F8DB /* ChosenFeatModel.swift in Sources */,
+				94D850932B171CAA00BEBC15 /* StatTabSingleArmorProficiencyDisplay.swift in Sources */,
+				9471EE722B1417B4002862E5 /* StatTabACDisplay.swift in Sources */,
+				94A6C7832A7368460020B2F7 /* HeritageView.swift in Sources */,
+				94B13C7C2A75AB2A00EEA61C /* ClassSelectionListDisplay.swift in Sources */,
+				94B13C9B2A7783DC00EEA61C /* CharacterAncestryExtension.swift in Sources */,
+				94B13C9F2A782A1E00EEA61C /* CharacterHeritageExtension.swift in Sources */,
+				9415488B2B0D354400D54729 /* StatTabView.swift in Sources */,
+				946ADBAC2A7199D000F8F8DB /* FeatView.swift in Sources */,
+				94B13C802A75B89E00EEA61C /* CharacterEffectExtension.swift in Sources */,
+				94503D032B094D9A001A6AF3 /* ChosenSpellButtonDisplay.swift in Sources */,
+				9471EE702B14179F002862E5 /* StatTabPerceptionDisplay.swift in Sources */,
+				9438953B2A89CA7700FF6329 /* LevelUpSignatureSpellSelectionView.swift in Sources */,
+				94BDBA752A7056DA00CEF379 /* ItemWeaponDisplay.swift in Sources */,
+				9415487F2B0A983A00D54729 /* AbilityBoostSelectionView.swift in Sources */,
+				94A6C7AB2A744BD10020B2F7 /* AncestryHeritageDisplay.swift in Sources */,
+				94B13C832A75E27500EEA61C /* CharacterFeatExtension.swift in Sources */,
+				94BDBA632A6E5FFD00CEF379 /* DeityListDisplay.swift in Sources */,
+				94F0E6402A7C934000303BF4 /* returnOtherFunctions.swift in Sources */,
+				94BDBA652A6E600900CEF379 /* DomainListDisplay.swift in Sources */,
+				94BDBA5A2A6E274100CEF379 /* ConditionView.swift in Sources */,
+				94F0E64A2A7D658A00303BF4 /* returnLanguageFunctions.swift in Sources */,
+				9471EE782B141E98002862E5 /* PerceptionBreakDown.swift in Sources */,
+				9471EE412B0DE8ED002862E5 /* StatTabHeaderDisplay.swift in Sources */,
+				9471EE632B11D22C002862E5 /* KeyPadDisplay.swift in Sources */,
+				94BDBA7F2A7057A800CEF379 /* ItemDescriptionDisplay.swift in Sources */,
+				94BDBA6B2A6F11CE00CEF379 /* DomainSelectionDisplay.swift in Sources */,
+				94A6C78E2A73786E0020B2F7 /* AncestryBasicDisplay.swift in Sources */,
+				94C299B32A6CA4CC0021A000 /* SpellHeightenedDisplay.swift in Sources */,
+				94BDBA4B2A6DA63500CEF379 /* ChooseRageWeaponListDisplay.swift in Sources */,
+				946ADBB32A71A57500F8F8DB /* FeatDescriptionDisplay.swift in Sources */,
+				94A6C7B32A744F990020B2F7 /* LanguageView.swift in Sources */,
+				94162FE82AE2169A006141B6 /* returnCharacterObjectFunctions.swift in Sources */,
+				9471EE6E2B141754002862E5 /* StatTabCombatStatsDisplay.swift in Sources */,
+				941C9F6C2A676BF800AB4B1F /* Route.swift in Sources */,
+				94A6C79A2A7439B70020B2F7 /* AdditionalSense.swift in Sources */,
+				94A6C78C2A7375B40020B2F7 /* ChosenHeritageModel.swift in Sources */,
+				94B13CA52A782DAA00EEA61C /* NewCharacterHeritageSelectionView.swift in Sources */,
+				94A6C7BB2A74545D0020B2F7 /* ChosenBackgroundModel.swift in Sources */,
+				941C9F6E2A676D3E00AB4B1F /* AppState.swift in Sources */,
+				94A6C7A22A743F7A0020B2F7 /* ChosenPhysicalFeatureModel.swift in Sources */,
+				94162FE52AE1C5B3006141B6 /* CharacterConditionalExtension.swift in Sources */,
+				94BDBA6D2A7051E900CEF379 /* ItemView.swift in Sources */,
+				9434DDA12A79966F00F3073D /* BackgroundSelectionListDisplay.swift in Sources */,
+				94C299B72A6CA6930021A000 /* SpellDisplay.swift in Sources */,
+				94C908552ADE5DA300EB5A01 /* ChooseAlchemicalFormulaCategoryListDisplay.swift in Sources */,
+				94BDBA702A70549000CEF379 /* ItemBasicDisplay.swift in Sources */,
+				94F0E6482A7D657300303BF4 /* returnSpellFunctions.swift in Sources */,
+				94503CFD2B094994001A6AF3 /* ChosenSpellModel.swift in Sources */,
+				94A6C76B2A72427D0020B2F7 /* ClassAbilityDescriptionDisplay.swift in Sources */,
+				94D8508F2B171BC800BEBC15 /* StatTabArmorProficiencyDisplay.swift in Sources */,
+				94F0E6382A7AF7A500303BF4 /* LevelUpAncestryFeatSelectionView.swift in Sources */,
+				941C9F502A6655AB00AB4B1F /* Character.swift in Sources */,
+				9471EE6B2B140E95002862E5 /* StatTabDyingView.swift in Sources */,
+				941C9F752A68619E00AB4B1F /* ChooseFeatFromListView.swift in Sources */,
+				94A6C76F2A7244E70020B2F7 /* ChosenClassAbilityModel.swift in Sources */,
+				9434DD9F2A79964A00F3073D /* NewCharacterBackgroundSelectionView.swift in Sources */,
+				94C299A72A6C9EC50021A000 /* SpellView.swift in Sources */,
+				9471EE542B0E98B7002862E5 /* StatTabHeaderAncestryDisplay.swift in Sources */,
+				94C299A42A6C46D90021A000 /* ChosenFeaturesModel.swift in Sources */,
+				94A6C7942A737CFA0020B2F7 /* AncestryAbilityScoreDisplay.swift in Sources */,
+				9471EE3D2B0D8E2D002862E5 /* ProficiencyBoxDisplay.swift in Sources */,
+				94A6C79C2A743A280020B2F7 /* AncestrySenseDisplay.swift in Sources */,
+				94162FE02AE056C2006141B6 /* ConditionalOtherDisplay.swift in Sources */,
+				94162FE32AE19D07006141B6 /* LevelUpConditionalChangeView.swift in Sources */,
+				94DEEECC2AD0E38B005406AC /* CharacterSpellExtension.swift in Sources */,
+				94C299B12A6CA3BF0021A000 /* SpellCastingDisplay.swift in Sources */,
+				941548772B0962AA00D54729 /* SpellListButtonDisplay.swift in Sources */,
+				94FF9E562AC1050300E9C58C /* ConditionalTemporaryDisplay.swift in Sources */,
+				9471EE502B0E9866002862E5 /* StatTabeHeaderLevelDisplay.swift in Sources */,
+				94FF9E602AC7D30700E9C58C /* RealmManager.swift in Sources */,
+				9471EE562B0E98E8002862E5 /* StatTabHeaderClassDisplay.swift in Sources */,
+				94F0E6422A7C97E200303BF4 /* returnSkillFunctions.swift in Sources */,
+				94A6C7792A734D6A0020B2F7 /* ClassView.swift in Sources */,
+				9471EE322B0D7BC5002862E5 /* returnConditionFunctions.swift in Sources */,
+				94F0E6362A7AF79600303BF4 /* LevelUpAncestryFeatListView.swift in Sources */,
+				94A6C7B02A744EFF0020B2F7 /* AncestryLanguageDisplay.swift in Sources */,
+				941C9F652A673CCE00AB4B1F /* TemporaryEffectDisplay.swift in Sources */,
+				946ADBAF2A71A51400F8F8DB /* FeatBasicDisplay.swift in Sources */,
+				9434DDB22A79DBC100F3073D /* LevelUpSpellView.swift in Sources */,
+				94A6C7802A73682C0020B2F7 /* AncestryView.swift in Sources */,
+				941C9F442A660A9300AB4B1F /* ContentView.swift in Sources */,
+				9430C7F72A95527E00A2794D /* CharacterListView.swift in Sources */,
+				941C9F772A686E6E00AB4B1F /* ChooseFeatListView.swift in Sources */,
+				94BDBA492A6CFBF800CEF379 /* WeaponAndArmorDisplay.swift in Sources */,
+				9471EE5C2B0E9D08002862E5 /* WithBackgroundProgressViewStyle.swift in Sources */,
+				9471EE342B0D7BFF002862E5 /* CharacterConditionExtension.swift in Sources */,
+				94A6C7A62A7447540020B2F7 /* AncestryFeatDisplay.swift in Sources */,
+				941C9F7E2A69FC1700AB4B1F /* SkillSelectionDisplay.swift in Sources */,
+				94F0E6542A82FD0300303BF4 /* LevelUpSelectorSelectionView.swift in Sources */,
+				9471EE522B0E9897002862E5 /* StatTabHeaderHeritageDisplay.swift in Sources */,
+				94BDBA7D2A70578300CEF379 /* ItemRuneDisplay.swift in Sources */,
+				94C299C22A6CCCA60021A000 /* ChooseSpellListView.swift in Sources */,
+				9471EE482B0E95C2002862E5 /* StatTabHeaderAlignment.swift in Sources */,
+				94B13C852A76D5FF00EEA61C /* GiveCharacterItem.swift in Sources */,
+				941C9F422A660A9300AB4B1F /* Path2eApp.swift in Sources */,
+				941C9F612A67230400AB4B1F /* ModificationDisplay.swift in Sources */,
+				941C9F582A66F97500AB4B1F /* DataClasses.swift in Sources */,
+				94D850952B18471F00BEBC15 /* StatTabSingleWeaponProficiencyDisplay.swift in Sources */,
+				94DEEEC82ACF8F58005406AC /* returnLevelUpFunctions.swift in Sources */,
+				941548882B0C6DC600D54729 /* CharacterSheetTabView.swift in Sources */,
+				94D850712B14311500BEBC15 /* returnClassDCFunctions.swift in Sources */,
+				9471EE4A2B0E95E8002862E5 /* StatTabHeaderChangeAlignment.swift in Sources */,
+				94A6C7662A7240C60020B2F7 /* ClassAbilityView.swift in Sources */,
+				94FF9E4E2AC101D200E9C58C /* ConditionalSkillDisplay.swift in Sources */,
+				94162FEA2AE216B4006141B6 /* returnConditionalFunctions.swift in Sources */,
+				9471EE3B2B0D8C4D002862E5 /* returnSavingThrowFunctions.swift in Sources */,
+				94B13C722A7594E300EEA61C /* VersatileHeritageView.swift in Sources */,
+				94BDBA7B2A70577000CEF379 /* ItemStorageDisplay.swift in Sources */,
+				9471EE672B1275F3002862E5 /* returnHealthFunctions.swift in Sources */,
+				94D850732B14356500BEBC15 /* ClassDCBreakdown.swift in Sources */,
+				94B13C982A777DA400EEA61C /* NewCharacterAncestrySelectionView.swift in Sources */,
+				94FF9E522AC1035C00E9C58C /* ConditionalWAADisplay.swift in Sources */,
+				94FF9E582AC378DA00E9C58C /* Preferences.swift in Sources */,
+				9434DDBE2A79EF7800F3073D /* LevelUpClassAbilitySelectionView.swift in Sources */,
+				9434DDBC2A79E54B00F3073D /* CharacterClassAbilityExtension.swift in Sources */,
+				941C9F7B2A69D22200AB4B1F /* SkillDisplay.swift in Sources */,
+				94BDBA832A70937600CEF379 /* ItemSelectionView.swift in Sources */,
+				94C908512ADA34B000EB5A01 /* CharacterFormulaExtension.swift in Sources */,
+				94B13C962A777D8C00EEA61C /* AncestrySelectionListDisplay.swift in Sources */,
+				94FF9E502AC1026600E9C58C /* ConditionalFeatDisplay.swift in Sources */,
+				94D8507E2B166DB900BEBC15 /* returnSpeedFunctions.swift in Sources */,
+				9471EE2D2B0D4B55002862E5 /* AbilityScoreBreakdownView.swift in Sources */,
+				94D850802B16835500BEBC15 /* StatTabSingleSpeedDisplay.swift in Sources */,
+				94BDBA4F2A6DDBC900CEF379 /* ChooseAlchemicalFormulaListDisplay.swift in Sources */,
+				94BDBA792A70574600CEF379 /* ItemShieldDisplay.swift in Sources */,
+				94A6C7922A737C870020B2F7 /* ChosenAncestryModel.swift in Sources */,
+				94C908532ADCF8E600EB5A01 /* LevelUpFormulaCategoryListView.swift in Sources */,
+				9471EE612B11C8C0002862E5 /* StatTabHealthDisplay.swift in Sources */,
+				94B13C932A77736000EEA61C /* CharacterClassExtension.swift in Sources */,
+				94BDBA672A6E601C00CEF379 /* AdvancedDomainListDisplay.swift in Sources */,
+				9471EE442B0E8AE6002862E5 /* StatTabEditNameDisplay.swift in Sources */,
+				941C9F562A66F96700AB4B1F /* SharedClasses.swift in Sources */,
+				94A6C7622A71B9740020B2F7 /* FormulaSelectionView.swift in Sources */,
+				94B13C742A75957E00EEA61C /* ChosenVersatileHeritageModel.swift in Sources */,
+				943895472A93124D00FF6329 /* LevelUpFormulaSelectionView.swift in Sources */,
+				94A6C7772A7335710020B2F7 /* ClassFeatureSelectionDisplay.swift in Sources */,
+				94C299AF2A6CA32E0021A000 /* SpellTraitDisplay.swift in Sources */,
+				94BDBA5D2A6E2ACF00CEF379 /* DeityView.swift in Sources */,
+				94A6C7692A72420F0020B2F7 /* ClassAbilityBasicDisplay.swift in Sources */,
+				94C9084D2AD3BFB400EB5A01 /* LevelUpPreparedListListView.swift in Sources */,
+				94F0E6442A7D634C00303BF4 /* returnTraitFunctions.swift in Sources */,
+				94D850982B184DBB00BEBC15 /* returnWeaponFunctions.swift in Sources */,
+				9434DDA62A79B04C00F3073D /* AlignmentSelectionView.swift in Sources */,
+				94162FDE2ADF8557006141B6 /* ConditionalFeatureDisplay.swift in Sources */,
+				94C299A22A6AE7BC0021A000 /* SingleSkillDisplay.swift in Sources */,
+				94F0E6462A7D654600303BF4 /* returnReligionFunctions.swift in Sources */,
+				94A6C79F2A743D740020B2F7 /* AncestryPhysicalFeatureDisplay.swift in Sources */,
+				946ADBB12A71A55200F8F8DB /* FeatActionDisplay.swift in Sources */,
+				94A6C7732A730EDF0020B2F7 /* ClassAbilitySelectionView.swift in Sources */,
+				94D850912B171C2A00BEBC15 /* StatTabWeaponProficiencyDisplay.swift in Sources */,
+				946ADBAA2A70B0AC00F8F8DB /* Spellcasting.swift in Sources */,
+				94BDBA692A6EF20D00CEF379 /* DeitySelectionView.swift in Sources */,
+				9471EE292B0D43F6002862E5 /* StatTabAbilityScoresDisplay.swift in Sources */,
+				94BAB8E22B058059008FE3B3 /* ChosenConditionalModel.swift in Sources */,
+				943895432A92EE9E00FF6329 /* returnFormulaFunctions.swift in Sources */,
+				9434DDA42A799F0F00F3073D /* CharacterBackgroundExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		941C9F4A2A660A9500AB4B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		941C9F4B2A660A9500AB4B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		941C9F4D2A660A9500AB4B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D94A78BDB4C6ABC53A706C /* Pods-Path2e.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Path2e/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UC4CG2772;
+				ENABLE_PREVIEWS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryweb.Path2e;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		941C9F4E2A660A9500AB4B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2E556107FDC4808BEFE0CF /* Pods-Path2e.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Path2e/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UC4CG2772;
+				ENABLE_PREVIEWS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryweb.Path2e;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		941C9F392A660A9300AB4B1F /* Build configuration list for PBXProject "Path2e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941C9F4A2A660A9500AB4B1F /* Debug */,
+				941C9F4B2A660A9500AB4B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941C9F4C2A660A9500AB4B1F /* Build configuration list for PBXNativeTarget "Path2e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941C9F4D2A660A9500AB4B1F /* Debug */,
+				941C9F4E2A660A9500AB4B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 941C9F362A660A9300AB4B1F /* Project object */;
+}
